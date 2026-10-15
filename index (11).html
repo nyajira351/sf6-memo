@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Counter Note - SF6 対策メモ</title>
+<meta name="theme-color" content="#141519">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CounterNote">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%20%22Counter%20Note%20-%20SF6%20%E5%AF%BE%E7%AD%96%E3%83%A1%E3%83%A2%22%2C%20%22short_name%22%3A%20%22CounterNote%22%2C%20%22display%22%3A%20%22standalone%22%2C%20%22start_url%22%3A%20%22.%22%2C%20%22background_color%22%3A%20%22%23141519%22%2C%20%22theme_color%22%3A%20%22%23141519%22%2C%20%22icons%22%3A%20%5B%7B%22src%22%3A%20%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAI20lEQVR42u3dfWwT5wHH8Tv7/HLxS%2ByYhDjvhKYiSUfI0kFoF8hgaUhgWksLe1EZHV3aQWFZ2aZqUzVtUtU/KrW8jBZWSkFpK6UIoWk0KLy0EFgyqNiakDVpmpa4IYuJwbEdv9vnu/1RqepYdnnOcWwf/D7/cgb78uXuee65c%2Bgbb9VRANNRYBcA4gDEAYgDEAcgDkAcgDgAcQDiAMQBgDgAcQDigDlEz8u2Yi8AjhyAOABxAOIAxAGIAxAHIA5AHIA4ABAHIA5AHIA4AHEA4gDEAYgDEAcgDgDEAYgDEAcgDkAcgDgAcQDiAMQBiAMQBwDiAMQBiAMQByAOQByAOABxAOIAxAGAOABxAOIAxAGIAxAHIA5AHIA4AHEAIA5AHBAvRkbv1axXVhRoKgo0RfNUuSYm18QYWKVWRWtVtIKmwxzvDwuT3phjirM5Itcmov2joU/tkRgv4Mccn3T/1aE0TdWUsvUVuhUVGaXz1VJf7g/zfxsMnO33XRwM%2BEI84aserTX%2BcWMO4cZTQX7NC7apIC/1vS3K1xz7VeGMm3X2%2Bn7ddgNHjv%2BSmaFcv8y4YbmxaJ4q7r9Ep1E0LtE3LtFHY0L3J4G2LveHnwUT%2Bz6NrOLJ1eZd7zlxWkkGVq3YtCJzyyqzXpuwIZFKSddX6uordQNj4SPn3ad6fQk83TxeZ3rnosfh4TAgnVvfXpTR8duiXzRbEljG11UUaF56fH5VsSaBf6dGRW9rzMJsZQ6pGfr3G7IPPJWXk8nIbj%2BuX2osyVEjjrmZieiUh7bmb1yeKdf9qKBam7MQR%2BLlGJl3WguqF2hlvSsbFuu/UaRFHAk%2BZryxNW82U5L08ew6C%2BJI3GRJSe970hrHBYz0tPQe9sFFGZjKJsbOdZaqkngOxbab0QsD/j5byHYzOuHhAmE%2BxlOsmjayCqtZVZytqizU3L%2BQXZj07H651tIzFBAExDE7tWXsT1aapL7qzFXfmx%2B4%2B0dD//tHvpDgC/HjLu4f14LHL1MURVnNTHO14eGlhgXJmkqU52uaqg0n/%2BlFHPFTKujfrc%2BW9JIxZ/T5dseVzyVc4rS7uEMfuN4856or17WsNidnzLujKet0n4%2BLyf7okbIxxw8fNEoaalweDm585bqkMr4iCNSFAf%2BmP421HraP3orO9UcrtKgeqzViQBr/VYHN9WZJZWw7OB7H4tZt3u/3P/LS6Bvvuzh%2Bbj/g1oeyWLUCccTjocX6PDPpGW3MGX32iD3MJeYoHeaE3R3Oq1%2BE5vQDWgzKOIZTiIOiKOr73yI96goC9Xy7Y/bHjOT76XdMZp0ScUhjYBXL72UJNz7V54tvnJEEdpfYMqxeq2j5rhlxSFNXrmOUNOHGfz4zmbb77miPxzHFiQ66M61mBnFIUE181avPFhq2R9J234Wiwv5TYu2qGXr7GgvikID8kuiZq740333HL3ttN8Xmxt%2B731BmVSMOIjRN3ZNLurO6hwJpvvtivLD3pNgNggqaam22IA4i2UZGzRANOMJR4fOJSPrvwdN9vn%2BNhkU2qK/UyfRuhGTHQX55Y8QR4WUygd3VcUt8g53r5iGOmVkMpFP/Cfncr3t5ONgjegasXqCtr9QhjhloVKT/otsvpwtfuzuc4sv0rc0WBY04RGlVpHsozMkpjoGxcGev2NyqzKpeV2NAHAkitxXvvSed4sv025sshIPxuzSOcJT0Z05%2BAkoT153RY5emxAfjP3ggE3H8X6Eo6ckiM0N%2BS977T08GI2If8KkG8xw9rHUnxDHpixFuOd8kv1UJpzfW1uUW2cCsUz5Rb0Ic0xt3kU5QS3PUChneLnP4nNvlF/sPsLneRD6fv7viuOnhomQ3V2pU9EIZPrLgC/EHz7pENmDVip83ZCGOafACRb7Q%2BsC9snwGpL3bI36rx4blxkKLCnFMg/wWvYYqvRzjiHDCvk6x1ThGSe9oykIc0/hohDSOJSVa8iXctHLiilf8ANlUbViUp0Ect7s46Cd/puPpBlk%2Bus4L1B7RpXyapp5Zk4U4bjcV5C8Nk94WumaJvqaUlWMf5z/2ix8j0/8OwtRMFv/y4RThljRNvfCjHCMry2dAXnnvFiVnqdnpZ6767cQXPAotql1PWDUJWpXQMHTrWsvi4mTcffPRSOj8x37EIU2MF46cd5Nvv6yMfbUlzzDr48eq%2B3THf1PUstrMJOtz7znplO/3oKbscP1uj2fEIeEuwNoy9ujOwrjHH3XlGW07CvZusRZnJ/UCw7A9cuKKF3FIw8WEF49LOyUXWlRHnsl/eXPufUWkk0CrmdmyyvzX54r2t%2BR9M0U3cu7rdEY4WR49Ujlg/vungbcuuDetMJG/hKapxip9Y5Xe5oh0DQb6bKERR2TCzQUjQkwQtCpFZobCamKKc9SVBZqaUjYdHguwu7j2bo8cH51N8Wzq5RPOxcXaKunDw5IcdUmOmlopj738%2BlnX%2BmVGGS3Wp/i08tXJZfsh%2BzU5PIIwG25/7PA5t%2BzedupbdvliPzswft0ZvbP7aOty3/LGEIdkDg/34z1jvbbQHRxHMMIfOD2JOOI8fmx57d/i92DK3bFLU/I6QKbRECnCCX846th2cFz8ew3ki4vN8GAt4pjBhcHA2hdH93VOkv/uHEkGxsLPvT3R90U4JZ%2Bus9c3MBaWSxzpuDD45em5vdvz6DLjYwm6aYqLCT1DgbYuN/mC8FwQBGp3h/P1p/MQx2ynf19%2BhWhNKVtfqVtZkRHHF80GI3z3J4Gz/f6uAb83Pb5YrGcocGk4WFsmg/sQ0v13vH1dll5ZWagpz9cUZ6tzTcx8E2NkFRoVrVXRvED5grw3xPtCvNMb%2B%2BxGeGg8MjQeHnFE74Avi0UcgAEpIA5AHIA4AHEAIA5AHIA4AHEA4gDEAYgDEAcgDkAcAIgDEAcgDkAcgDgAcQDiAMQBiAMQByAOAMQBiAMQByAOQByAOABxAOIAxAGIAwBxAOIAxAGIAxAHIA5AHIA4AHEA4gBAHIA4AHEA4gDEAYgDEAcgDkAcgDjgLvcfku3Wyp%2B0QJsAAAAASUVORK5CYII%3D%22%2C%20%22sizes%22%3A%20%22180x180%22%2C%20%22type%22%3A%20%22image/png%22%7D%5D%7D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #141519;
+    --bg-header: #24262d;
+    --card: #1B1C22;
+    --border: #24262d;
+    --input: #202127;
+    --accent: #E8A33D;
+    --text: #ffffff;
+    --text-dim: #7A7D87;
+    --text-faint: #585A63;
+    --red: #C1503F;
+    --green: #5E9A7C;
+    --c-macro: #5B8DEF;
+    --c-micro: #E8A33D;
+    --c-punish: #E0566B;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Noto Sans JP', sans-serif; }
+  body { min-height: 100vh; overscroll-behavior-y: contain; }
+  .display { font-family: 'Oswald', sans-serif; letter-spacing: 0.02em; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  button { font-family: inherit; cursor: pointer; }
+  input, textarea { font-family: inherit; }
+  #app { min-height: 100vh; display: flex; flex-direction: column; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-thumb { background: #33343b; border-radius: 3px; }
+
+  .personal-bar-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: calc(100% - 32px); margin: 8px 16px 0; padding: 10px 0; border-radius: 10px; border: 1px solid rgba(232,163,61,0.35); background: rgba(232,163,61,0.12); color: var(--accent); font-size: 15px; font-weight: 700; font-family: 'Oswald', sans-serif; letter-spacing: 0.03em; }
+
+  .header { padding: 8px 16px 5px; background: repeating-linear-gradient(115deg, rgba(232,163,61,0.045) 0 2px, transparent 2px 16px), linear-gradient(180deg, var(--bg-header), var(--bg)); border-bottom: 1px solid rgba(232,163,61,0.22); }
+  .header-row { display: flex; align-items: center; gap: 8px; margin-bottom: 3px; }
+  .back-btn { background: none; border: none; color: rgba(255,255,255,0.75); padding: 12px; margin: -8px 0 -8px -12px; display: flex; }
+  .title { font-size: 20px; font-weight: 700; margin: 0; }
+  .sub { font-size: 14px; color: rgba(255,255,255,0.4); margin: 2px 0 0; }
+
+  .char-grid { flex: 1; overflow-y: auto; padding: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .char-btn { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; padding: 16px 6px; background: var(--card); border: 1px solid var(--border); }
+  .char-count { position: absolute; top: 4px; right: 7px; font-size: 18px; font-weight: 700; color: var(--accent); font-family: 'JetBrains Mono', monospace; }
+  .char-tag { font-size: 15px; font-weight: 700; }
+  .char-name { font-size: 14px; margin-top: 5px; color: rgba(255,255,255,0.8); text-align: center; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .vs-row { display: flex; align-items: center; justify-content: space-between; }
+  .vs-side { background: none; border: none; color: inherit; text-align: left; flex: 1; padding: 0; }
+  .vs-side.right { text-align: right; }
+  .vs-label { font-size: 12px; color: rgba(255,255,255,0.4); margin: 0; }
+  .vs-name { font-size: 22px; font-weight: 700; font-style: italic; letter-spacing: 0.04em; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 1px 0 rgba(0,0,0,0.6); }
+  .vs-mid { font-size: 22px; font-weight: 700; font-style: italic; color: var(--accent); transform: skewX(-8deg); text-shadow: 0 0 12px rgba(232,163,61,0.55); }
+
+  .save-indicator { font-size: 12px; }
+  .save-link { font-size: 12px; color: rgba(255,255,255,0.4); text-decoration: underline; background: none; border: none; }
+
+  .sort-row { display: flex; gap: 6px; padding: 4px 16px 2px; }
+  .sort-btn { flex: 1; font-size: 11px; padding: 5px 0; border-radius: 6px; background: var(--card); border: 1px solid var(--border); color: var(--text-dim); }
+  .sort-btn.active { background: var(--accent); border-color: var(--accent); color: #1B1C22; font-weight: 700; }
+
+  main { flex: 1; overflow-y: auto; padding: 2px 16px 16px; padding-bottom: 96px; }
+  .empty-state { text-align: center; padding: 64px 0; }
+  .empty-state p:first-child { color: rgba(255,255,255,0.25); font-size: 14px; margin: 0; }
+  .empty-state p:last-child { color: rgba(255,255,255,0.15); font-size: 12px; margin: 4px 0 0; }
+
+  .section-head { display: flex; align-items: center; gap: 8px; margin: 8px 0 4px; }
+  .section-head:first-child { margin-top: 0; }
+  .section-dot { width: 5px; height: 15px; border-radius: 1px; transform: skewX(-14deg); flex-shrink: 0; }
+  .section-label { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; }
+  .section-count { font-size: 11px; color: var(--text-dim); }
+
+  .note-list { display: flex; flex-direction: column; gap: 3px; }
+  .note-card { background: var(--card); border: 1px solid var(--border); border-left-width: 4px; border-left-style: solid; border-radius: 8px; overflow: hidden; }
+  .note-head { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 4px; padding: 6px 8px 6px 10px; background: none; border: none; color: inherit; text-align: left; gap: 8px; }
+  .note-title-line { display: flex; align-items: center; gap: 3px; min-width: 0; flex: 1; }
+  .note-title { font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.92); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .imp-dots { font-size: 8px; letter-spacing: 0; flex-shrink: 0; margin-right: 1px; }
+  .frame-badge { font-size: 14px; font-weight: 700; flex-shrink: 0; font-family: 'JetBrains Mono', monospace; min-width: 26px; display: inline-block; }
+  .chip { display: inline-block; font-size: 10px; font-weight: 700; padding: 1px 3px; border-radius: 4px; flex-shrink: 0; font-family: 'JetBrains Mono', monospace; line-height: 1.4; white-space: nowrap; }
+  .chip-fixed { min-width: 30px; text-align: center; padding: 1px 0; }
+  .right-chips { display: flex; gap: 2px; flex-shrink: 0; align-items: center; }
+  .dg { display: inline-flex; gap: 2px; flex-shrink: 0; align-items: center; margin: 0; }
+  .dg-cell { width: 5px; height: 12px; border-radius: 1px; background: #FFD21E; box-shadow: 0 0 0 1px rgba(0,0,0,0.55); transform: skewX(14deg); }
+  .dg-cell.on { background: #2EE57E; }
+  .origin-head-btn { width: 100%; display: flex; align-items: center; gap: 8px; border-left-width: 4px !important; background: rgba(79,189,186,0.08); border: 1px solid rgba(79,189,186,0.25); border-radius: 8px; color: #4FBDBA; font-size: 13px; font-weight: 700; padding: 8px 12px; margin: 6px 0 3px; text-align: left; font-family: inherit; cursor: pointer; }
+  .rcp-row { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; margin: 2px 0 6px; }
+  .rcp-step { display: inline-flex; align-items: center; gap: 2px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 3px 6px; }
+  .rcp-arrows { font-size: 15px; font-weight: 700; letter-spacing: 1px; color: #fff; line-height: 1; }
+  .rcp-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; color: #1B1C22; border-radius: 4px; padding: 2px 5px; line-height: 1.2; }
+  .rcp-ico-img { width: 19px; height: 19px; flex-shrink: 0; display: inline-block; vertical-align: middle; }
+  .rcp-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; color: #fff; border-radius: 4px; padding: 2px 5px; line-height: 1.2; }
+  .rcp-plain { font-size: 11px; color: var(--text-dim); }
+  .rcp-sep { color: var(--text-faint); font-size: 10px; }
+  .group-body { margin-left: 9px; padding-left: 8px; border-left: 2px solid rgba(255,255,255,0.09); }
+  .sub-head-btn { width: 100%; display: flex; align-items: center; gap: 6px; margin: 4px 0 3px 0; padding: 6px 10px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-left: 3px solid; border-radius: 7px; font-size: 12px; font-weight: 700; text-align: left; font-family: inherit; cursor: pointer; }
+  .sub-list { margin-left: 9px; padding-left: 8px; border-left: 2px solid rgba(255,255,255,0.06); }
+  .mini-move { background: rgba(255,255,255,0.08); border: none; color: inherit; font-size: 13px; font-weight: 700; border-radius: 5px; padding: 3px 9px; line-height: 1; font-family: inherit; }
+  .rename-input { flex: 1; min-width: 0; background: var(--input); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 13px; font-weight: 700; font-family: inherit; padding: 5px 8px; }
+  .note-body-wrap { padding: 0 14px 5px; }
+  .note-divider { height: 1px; background: var(--border); margin-bottom: 3px; }
+  .note-body { font-size: 12px; line-height: 1.35; white-space: pre-wrap; margin: 0; }
+  .note-actions { display: flex; gap: 16px; margin-top: 5px; }
+  .note-actions button { background: none; border: none; font-size: 13px; padding: 0; }
+
+  .item-form { background: var(--card); border: 1px solid var(--accent); border-radius: 8px; padding: 12px; margin-bottom: 8px; }
+  .item-form input[type=text], .item-form textarea { width: 100%; background: var(--input); outline: none; color: #fff; border: none; border-radius: 6px; padding: 8px 12px; font-size: 16px; margin-bottom: 8px; resize: none; }
+  .item-form textarea { font-size: 15px; }
+  .field-label { font-size: 12px; color: var(--text-dim); margin: 0 0 4px; }
+  .mic-btn { background: var(--input); border: 1px solid var(--border); color: var(--text-dim); border-radius: 12px; padding: 2px 10px; font-size: 12px; display: inline-flex; align-items: center; gap: 4px; }
+  .mic-btn.recording { background: var(--red); border-color: var(--red); color: #fff; }
+  .field-label-row { display: flex; align-items: center; justify-content: space-between; margin: 0 0 4px; }
+  .seg-row { display: flex; gap: 6px; margin-bottom: 8px; }
+  .seg-btn { flex: 1; font-size: 13px; padding: 8px 0; border-radius: 6px; background: var(--input); border: 1px solid var(--border); color: var(--text-dim); }
+  .seg-btn.active { color: #fff; font-weight: 700; border-color: transparent; }
+  .frame-select { width: 100%; background: var(--input); color: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; font-size: 16px; margin-bottom: 8px; font-family: 'JetBrains Mono', monospace; }
+  .form-actions { display: flex; justify-content: flex-end; gap: 10px; }
+  .form-actions button { border: none; border-radius: 6px; padding: 6px 10px; font-size: 13px; display: flex; align-items: center; gap: 4px; }
+  .btn-cancel { background: none; color: rgba(255,255,255,0.5); }
+  .btn-save { background: var(--accent); color: #1B1C22; font-weight: 700; }
+
+  .fab { position: fixed; bottom: 24px; right: 20px; width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(145deg, #F5BE5C, #E8A33D); border: none; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 18px rgba(232,163,61,0.4), 0 4px 14px rgba(0,0,0,0.4); font-size: 28px; color: #1B1C22; line-height: 1; }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: flex; align-items: flex-end; justify-content: center; z-index: 50; }
+  .modal { width: 100%; max-width: 480px; max-height: 85vh; overflow-y: auto; background: var(--card); border-radius: 16px 16px 0 0; padding: 16px; }
+  .modal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .modal-head h3 { margin: 0; font-size: 17px; font-weight: 700; }
+  .modal-close { background: none; border: none; color: rgba(255,255,255,0.5); font-size: 20px; }
+  .modal p.desc { font-size: 13px; color: rgba(255,255,255,0.5); margin: 0 0 8px; }
+  .modal textarea { width: 100%; background: var(--input); color: #fff; border: none; border-radius: 6px; padding: 8px 12px; font-size: 11px; margin-bottom: 8px; resize: none; }
+  .modal .action-btn { border: none; border-radius: 6px; padding: 7px 12px; font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+  .btn-amber { background: var(--accent); color: #1B1C22; }
+  .btn-green { background: var(--green); }
+  .hr { height: 1px; background: var(--border); margin-bottom: 16px; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+// ---- ロスターデータ（スト6 2026年7月時点） ----
+const CHARACTERS = [
+  { id: "ryu", name: "リュウ", tag: "RYU" },
+  { id: "luke", name: "ルーク", tag: "LUK" },
+  { id: "jamie", name: "ジェイミー", tag: "JAM" },
+  { id: "chunli", name: "春麗", tag: "CHU" },
+  { id: "guile", name: "ガイル", tag: "GUI" },
+  { id: "kimberly", name: "キンバリー", tag: "KIM" },
+  { id: "juri", name: "ジュリ", tag: "JUR" },
+  { id: "ken", name: "ケン", tag: "KEN" },
+  { id: "blanka", name: "ブランカ", tag: "BLA" },
+  { id: "dhalsim", name: "ダルシム", tag: "DHA" },
+  { id: "ehonda", name: "エドモンド本田", tag: "HON" },
+  { id: "deejay", name: "ディージェイ", tag: "DEE" },
+  { id: "manon", name: "マノン", tag: "MAN" },
+  { id: "marisa", name: "マリーザ", tag: "MRS" },
+  { id: "jp", name: "JP", tag: "JP" },
+  { id: "zangief", name: "ザンギエフ", tag: "ZAN" },
+  { id: "lily", name: "リリー", tag: "LIL" },
+  { id: "cammy", name: "キャミィ", tag: "CAM" },
+  { id: "rashid", name: "ラシード", tag: "RAS" },
+  { id: "aki", name: "A.K.I.", tag: "AKI" },
+  { id: "ed", name: "エド", tag: "ED" },
+  { id: "akuma", name: "豪鬼", tag: "AKU" },
+  { id: "bison", name: "ベガ", tag: "BIS" },
+  { id: "terry", name: "テリー", tag: "TER" },
+  { id: "mai", name: "舞", tag: "MAI" },
+  { id: "elena", name: "エレナ", tag: "ELE" },
+  { id: "sagat", name: "サガット", tag: "SAG" },
+  { id: "cviper", name: "C.ヴァイパー", tag: "CVP" },
+  { id: "alex", name: "アレックス", tag: "ALX" },
+  { id: "ingrid", name: "イングリッド", tag: "ING" },
+  { id: "yasmine", name: "ヤスミン", tag: "YAS" },
+];
+const charById = (id) => CHARACTERS.find((c) => c.id === id);
+
+const CATEGORIES = [
+  { id: "macro", label: "マクロ", color: "var(--c-macro)" },
+  { id: "micro", label: "ミクロ", color: "var(--c-micro)" },
+  { id: "punish", label: "フレーム", color: "var(--c-punish)" },
+  { id: "setplay", label: "セットプレイ", color: "#4FBDBA" },
+];
+const PERSONAL_CATEGORIES = [
+  { id: "combo", label: "コンボ", color: "#9B7EDE" },
+  { id: "setplay", label: "セットプレイ", color: "#4FBDBA" },
+  { id: "neutral", label: "立ち回り", color: "#E8A33D" },
+];
+const catById = (id) => CATEGORIES.concat(PERSONAL_CATEGORIES).find((c) => c.id === id) || CATEGORIES[0];
+const activeCategories = () => (state.screen === "personal" ? PERSONAL_CATEGORIES : CATEGORIES);
+const IMP_LABELS = { 1: "低", 2: "中", 3: "高" };
+
+const STORAGE_KEY = "sf6-counter-note-data";
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      const s = Object.assign(defaultState(), parsed);
+      s.store = migrateStore(s.store || {});
+      if (!s.personalByChar) s.personalByChar = {};
+      if (!s.deleted) s.deleted = {};
+      if (!s.wipMarks) s.wipMarks = {};
+      // 旧形式: メモ本体のwipフラグを「自分の課題マーク」へ一度だけ移行
+      try {
+        if (!localStorage.getItem("sf6-cn-wip-migrated")) {
+          const seed = {};
+          const collect = (map) => Object.keys(map || {}).forEach((k) => ((map[k] && map[k].notes) || []).forEach((n) => {
+            if (n && n.wip) { seed[n.id] = { on: true, ts: n.updatedAt || Date.now() }; n.wip = false; }
+          }));
+          collect(s.store); collect(s.personalByChar);
+          if (Object.keys(seed).length) {
+            s.wipMarks.local = Object.assign({}, s.wipMarks.local || {}, seed);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(s));
+          }
+          localStorage.setItem("sf6-cn-wip-migrated", "1");
+        }
+      } catch (e) {}
+      // 旧バージョン（キャラ非依存の共通メモ）があれば、選択中の使用キャラに紐づけて引き継ぐ
+      if (parsed.personal && Array.isArray(parsed.personal.notes) && parsed.personal.notes.length && parsed.selfId) {
+        const key = parsed.selfId;
+        const existing = s.personalByChar[key] || { notes: [] };
+        s.personalByChar[key] = { notes: existing.notes.concat(parsed.personal.notes) };
+      }
+      return s;
+    }
+  } catch (e) {}
+  return defaultState();
+}
+function defaultState() {
+  return { screen: "self", selfId: null, oppId: null, store: {}, personalByChar: {}, deleted: {}, wipMarks: {}, lastBackupAt: null };
+}
+// 旧バージョン（クイックメモ/詳細対策/課題/確定反撃タブ）のデータを新形式へ変換
+function migrateStore(store) {
+  const out = {};
+  Object.keys(store).forEach((key) => {
+    const m = store[key];
+    if (m && Array.isArray(m.notes)) {
+      out[key] = Object.assign({}, m, { notes: m.notes.map((it) => Object.assign({}, it, { updatedAt: it.updatedAt || it.createdAt || Date.now() })) });
+      return;
+    }
+    const catMap = { quick: "macro", detail: "micro", issue: "macro", punish: "punish" };
+    const notes = [];
+    ["quick", "detail", "issue", "punish"].forEach((tabKey) => {
+      (m && m[tabKey] || []).forEach((it) => {
+        const now = Date.now();
+        notes.push({
+          id: it.id || uid(),
+          title: it.title || "",
+          body: it.body || "",
+          category: catMap[tabKey],
+          importance: it.important ? 3 : 2,
+          createdAt: now,
+          updatedAt: now,
+        });
+      });
+    });
+    out[key] = { notes: notes };
+  });
+  return out;
+}
+function pairKey(self, opp) { return self + "__" + opp; }
+function emptyMatchup() { return { notes: [] }; }
+function uid() { return Math.random().toString(36).slice(2, 9); }
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+let state = loadState();
+let ui = {
+  expandedId: null,
+  editingId: null,
+  adding: false,
+  draft: { title: "", body: "", category: "macro", importance: 2, frame: 5, microTag: null, damage: "", position: null, throwOk: false, shimmyOk: false, origin: "", sub: "", wip: false, drive: null, recipe: "", frameKind: "" },
+  backupOpen: false,
+  saveFlash: "",
+  minImp: 1, // 重要度フィルター 1=すべて 2=中以上 3=高のみ
+  wipOnly: false,
+  confirmDeleteId: null,
+  titleError: false,
+  openOrigins: {},
+  openSubs: {},
+  renameTarget: null,
+  originNewMode: false,
+  subNewMode: false,
+  recordingField: null,
+};
+let voiceRecognition = null;
+let renderingWip = false;
+let lastGroupKeys = [];
+let lastSubKeys = [];
+
+function stopVoiceIfActive() {
+  if (voiceRecognition) {
+    try { voiceRecognition.onend = null; voiceRecognition.stop(); } catch (e) {}
+    voiceRecognition = null;
+  }
+  ui.recordingField = null;
+}
+function toggleVoice(field) {
+  if (ui.recordingField === field) { stopVoiceIfActive(); render(); return; }
+  stopVoiceIfActive();
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) {
+    alert("お使いのブラウザは音声入力に対応していません。PCのChromeでお試しください。");
+    return;
+  }
+  const baseText = ui.draft[field] || "";
+  let finalText = "";
+  voiceRecognition = new SR();
+  voiceRecognition.lang = "ja-JP";
+  voiceRecognition.continuous = true;
+  voiceRecognition.interimResults = true;
+  voiceRecognition.onresult = (event) => {
+    let interim = "";
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      const t = event.results[i][0].transcript;
+      if (event.results[i].isFinal) finalText += t;
+      else interim += t;
+    }
+    const newValue = baseText + finalText + interim;
+    ui.draft[field] = newValue;
+    const el = document.querySelector('[data-draft="' + field + '"]');
+    if (el) el.value = newValue;
+  };
+  voiceRecognition.onerror = () => { stopVoiceIfActive(); render(); };
+  voiceRecognition.onend = () => { ui.recordingField = null; voiceRecognition = null; render(); };
+  try {
+    voiceRecognition.start();
+    ui.recordingField = field;
+    render();
+  } catch (e) {
+    stopVoiceIfActive();
+  }
+}
+
+function save() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    ui.saveFlash = "saved";
+  } catch (e) {
+    ui.saveFlash = "error";
+  }
+  cloudOnLocalSave();
+  render();
+  if (ui.saveFlash === "saved") setTimeout(() => { ui.saveFlash = ""; render(); }, 1200);
+}
+
+function currentMatchup() {
+  if (state.screen === "personal") {
+    if (!state.selfId) return { notes: [] };
+    return state.personalByChar[state.selfId] || { notes: [] };
+  }
+  if (!state.selfId || !state.oppId) return null;
+  const key = pairKey(state.selfId, state.oppId);
+  return state.store[key] || emptyMatchup();
+}
+function updateMatchup(fn) {
+  if (state.screen === "personal") {
+    if (!state.selfId) return;
+    const current = state.personalByChar[state.selfId] || { notes: [] };
+    const next = fn(current);
+    next.metaUpdatedAt = Date.now();
+    state.personalByChar[state.selfId] = next;
+    save();
+    return;
+  }
+  const key = pairKey(state.selfId, state.oppId);
+  const current = state.store[key] || emptyMatchup();
+  const next = fn(current);
+  next.metaUpdatedAt = Date.now();
+  state.store[key] = next;
+  save();
+}
+
+// ---- ルーティング操作 ----
+function resetEditState() { ui.adding = false; ui.editingId = null; ui.expandedId = null; ui.confirmDeleteId = null; }
+function pickSelf(id) {
+  resetEditState();
+  state.selfId = id;
+  state.screen = state.oppId ? "matchup" : "opponent";
+  save();
+}
+function pickOpponent(id) {
+  resetEditState();
+  state.oppId = id;
+  state.screen = "matchup";
+  save();
+}
+function goSelf() { stopVoiceIfActive(); resetEditState(); state.screen = "self"; render(); }
+function goOpponent() { stopVoiceIfActive(); resetEditState(); state.screen = "opponent"; render(); }
+function goPersonal() { if (!state.selfId) return; stopVoiceIfActive(); resetEditState(); state.screen = "personal"; render(); }
+
+function startAdd() { ui.titleError = false; ui.originNewMode = false; ui.subNewMode = false; ui.draft = { title: "", body: "", category: activeCategories()[0].id, importance: 2, frame: 5, microTag: null, damage: "", position: null, throwOk: false, shimmyOk: false, origin: "", sub: "", wip: false, drive: null, recipe: "", frameKind: "" }; ui.adding = true; ui.editingId = null; render(); focusFirstInput(); }
+function cancelForm() { stopVoiceIfActive(); ui.adding = false; ui.editingId = null; ui.titleError = false; render(); }
+function saveAdd() {
+  stopVoiceIfActive();
+  if (!ui.draft.title.trim()) { ui.titleError = true; render(); return; }
+  ui.titleError = false;
+  const newNoteId = uid();
+  if (ui.draft.wip) setWip(newNoteId, true, true);
+  updateMatchup((m) => {
+    const next = Object.assign({}, m);
+    const now = Date.now();
+    next.notes = m.notes.concat([{
+      id: newNoteId, title: ui.draft.title.trim(), body: ui.draft.body.trim(),
+      category: ui.draft.category, importance: ui.draft.importance,
+      frame: (ui.draft.category === "punish" || ui.draft.category === "setplay") && ui.draft.frame !== "" ? parseInt(ui.draft.frame, 10) : null,
+      damage: ui.draft.category === "combo" && String(ui.draft.damage || "").trim() !== "" ? parseInt(ui.draft.damage, 10) : null,
+      position: (ui.draft.category === "setplay" || ui.draft.category === "combo") ? ui.draft.position : null,
+      throwOk: ui.draft.category === "setplay" ? !!ui.draft.throwOk : false,
+      shimmyOk: ui.draft.category === "setplay" ? !!ui.draft.shimmyOk : false,
+      origin: String(ui.draft.origin || "").trim(),
+      sub: String(ui.draft.sub || "").trim(),
+      recipe: (ui.draft.category === "combo" || ui.draft.category === "setplay") ? normalizeRecipe(ui.draft.recipe || "") : "",
+      frameKind: (ui.draft.category === "punish" || ui.draft.category === "setplay") ? String(ui.draft.frameKind || "") : "",
+      wip: false,
+      drive: (ui.draft.category === "combo" || ui.draft.category === "setplay") && ui.draft.drive !== null && ui.draft.drive !== undefined && ui.draft.drive !== "" ? parseInt(ui.draft.drive, 10) : null,
+      microTag: ui.draft.category === "micro" ? ui.draft.microTag : null,
+      createdAt: now, updatedAt: now,
+    }]);
+    return next;
+  });
+  ui.adding = false;
+  ui.draft = { title: "", body: "", category: activeCategories()[0].id, importance: 2, frame: 5, microTag: null, damage: "", position: null, throwOk: false, shimmyOk: false, origin: "", sub: "", wip: false, drive: null, recipe: "", frameKind: "" };
+}
+function startEdit(itemId, fromWip) {
+  const m = currentMatchup();
+  const item = m.notes.find((it) => it.id === itemId);
+  if (!item) return;
+  ui.draft = { title: item.title, body: item.body, category: item.category, importance: item.importance, frame: (item.frame === null || item.frame === undefined) ? (item.category === "setplay" ? "" : 5) : item.frame, microTag: item.microTag || null, damage: item.damage != null ? String(item.damage) : "", position: item.position || null, throwOk: !!item.throwOk, shimmyOk: !!item.shimmyOk, origin: item.origin || "", sub: item.sub || "", recipe: item.recipe || "", frameKind: item.frameKind || "", wip: isWip(item.id), drive: (item.drive === null || item.drive === undefined) ? null : item.drive };
+  ui.editingId = itemId;
+  ui.editingFromWip = !!fromWip;
+  ui.adding = false;
+  ui.originNewMode = false;
+  ui.subNewMode = false;
+  ui.titleError = false;
+  render();
+  focusFirstInput();
+}
+function saveEdit(itemId) {
+  stopVoiceIfActive();
+  if (!ui.draft.title.trim()) { ui.titleError = true; render(); return; }
+  ui.titleError = false;
+  setWip(itemId, !!ui.draft.wip, true);
+  updateMatchup((m) => {
+    const next = Object.assign({}, m);
+    next.notes = m.notes.map((it) => it.id === itemId ? Object.assign({}, it, {
+      title: ui.draft.title.trim(), body: ui.draft.body,
+      category: ui.draft.category, importance: ui.draft.importance,
+      frame: (ui.draft.category === "punish" || ui.draft.category === "setplay") && ui.draft.frame !== "" ? parseInt(ui.draft.frame, 10) : null,
+      damage: ui.draft.category === "combo" && String(ui.draft.damage || "").trim() !== "" ? parseInt(ui.draft.damage, 10) : null,
+      position: (ui.draft.category === "setplay" || ui.draft.category === "combo") ? ui.draft.position : null,
+      throwOk: ui.draft.category === "setplay" ? !!ui.draft.throwOk : false,
+      shimmyOk: ui.draft.category === "setplay" ? !!ui.draft.shimmyOk : false,
+      origin: String(ui.draft.origin || "").trim(),
+      sub: String(ui.draft.sub || "").trim(),
+      recipe: (ui.draft.category === "combo" || ui.draft.category === "setplay") ? normalizeRecipe(ui.draft.recipe || "") : "",
+      frameKind: (ui.draft.category === "punish" || ui.draft.category === "setplay") ? String(ui.draft.frameKind || "") : "",
+      wip: false,
+      drive: (ui.draft.category === "combo" || ui.draft.category === "setplay") && ui.draft.drive !== null && ui.draft.drive !== undefined && ui.draft.drive !== "" ? parseInt(ui.draft.drive, 10) : null,
+      microTag: ui.draft.category === "micro" ? ui.draft.microTag : null,
+      updatedAt: Date.now(),
+    }) : it);
+    return next;
+  });
+  ui.editingId = null;
+}
+function applyRename() {
+  const rt = ui.renameTarget;
+  if (!rt) return;
+  const newVal = String(rt.value || "").trim();
+  if (!newVal || newVal === rt.key) { ui.renameTarget = null; render(); return; }
+  updateMatchup((m) => {
+    const next = Object.assign({}, m);
+    if (rt.type === "group") {
+      next.notes = m.notes.map((n) => {
+        if (n.category !== rt.catId) return n;
+        const k = (n.origin || "").trim() || "その他";
+        if (k !== rt.key) return n;
+        return Object.assign({}, n, { origin: newVal === "その他" ? "" : newVal });
+      });
+      const groupOrder = Object.assign({}, m.groupOrder || {});
+      if (groupOrder[rt.catId]) {
+        groupOrder[rt.catId] = groupOrder[rt.catId].map((k) => (k === rt.key ? newVal : k));
+      }
+      next.groupOrder = groupOrder;
+      const subOrder = Object.assign({}, m.subOrder || {});
+      const oldSubKey = rt.catId + "::" + rt.key;
+      const newSubKey = rt.catId + "::" + newVal;
+      if (subOrder[oldSubKey]) { subOrder[newSubKey] = subOrder[oldSubKey]; delete subOrder[oldSubKey]; }
+      next.subOrder = subOrder;
+    } else {
+      next.notes = m.notes.map((n) => {
+        if (n.category !== rt.catId) return n;
+        if (((n.origin || "").trim() || "その他") !== rt.groupKey) return n;
+        if ((n.sub || "").trim() !== rt.key) return n;
+        return Object.assign({}, n, { sub: newVal });
+      });
+      const subOrder = Object.assign({}, m.subOrder || {});
+      const okey = rt.catId + "::" + rt.groupKey;
+      if (subOrder[okey]) {
+        subOrder[okey] = subOrder[okey].map((k) => (k === rt.key ? newVal : k));
+      }
+      next.subOrder = subOrder;
+    }
+    return next;
+  });
+  ui.renameTarget = null;
+}
+
+function deleteItem(itemId) {
+  ui.confirmDeleteId = null;
+  if (!state.deleted) state.deleted = {};
+  state.deleted[itemId] = Date.now();
+  if (state.wipMarks) Object.keys(state.wipMarks).forEach((k) => { if (state.wipMarks[k]) delete state.wipMarks[k][itemId]; });
+  updateMatchup((m) => {
+    const next = Object.assign({}, m);
+    next.notes = m.notes.filter((it) => it.id !== itemId);
+    return next;
+  });
+  if (ui.expandedId === itemId) ui.expandedId = null;
+}
+function toggleExpand(itemId) { ui.expandedId = ui.expandedId === itemId ? null : itemId; ui.confirmDeleteId = null; render(); }
+function setDraftField(field, value) { ui.draft[field] = value; }
+function focusFirstInput() {
+  requestAnimationFrame(() => {
+    const el = document.querySelector(".item-form input[type=text]");
+    if (el && !el.value) el.focus();
+  });
+}
+
+function openBackup() { ui.backupOpen = true; render(); }
+function closeBackup() { ui.backupOpen = false; render(); }
+function copyBackup() {
+  const json = JSON.stringify({ store: state.store, personalByChar: state.personalByChar }, null, 2);
+  navigator.clipboard.writeText(json).then(() => {
+    const el = document.getElementById("copy-status");
+    if (el) el.textContent = "コピーしました";
+  }).catch(() => {
+    const el = document.getElementById("copy-status");
+    if (el) el.textContent = "コピー失敗（手動選択してください）";
+  });
+}
+function importBackup() {
+  const ta = document.getElementById("import-text");
+  const errEl = document.getElementById("import-error");
+  try {
+    const parsed = JSON.parse(ta.value);
+    applyImportedData(parsed);
+    errEl.textContent = "";
+    ui.backupOpen = false;
+    save();
+  } catch (e) {
+    errEl.textContent = "読み込めませんでした。コピーしたテキストをそのまま貼り付けてください。";
+  }
+}
+
+function applyImportedData(parsed) {
+  if (parsed && (parsed.store || parsed.personalByChar)) {
+    state.store = migrateStore(parsed.store || {});
+    state.personalByChar = parsed.personalByChar || {};
+  } else {
+    // 旧形式（対策メモのみ）のバックアップとの互換用
+    state.store = migrateStore(parsed);
+  }
+}
+function exportFile() {
+  const d = new Date();
+  const pad = (n) => String(n).padStart(2, "0");
+  const filename = "counter-note-" + d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) + ".json";
+  const blob = new Blob([JSON.stringify({ store: state.store, personalByChar: state.personalByChar }, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  state.lastBackupAt = Date.now();
+  save();
+  const el = document.getElementById("file-status");
+  if (el) el.textContent = filename + " を保存しました";
+}
+function importFile(file) {
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const parsed = JSON.parse(reader.result);
+      applyImportedData(parsed);
+      ui.backupOpen = false;
+      save();
+    } catch (e) {
+      const el = document.getElementById("file-status");
+      if (el) { el.textContent = "読み込めませんでした。保存したJSONファイルを選択してください。"; el.style.color = "var(--red)"; }
+    }
+  };
+  reader.readAsText(file);
+}
+
+// ---- レンダリング ----
+function render() {
+  const app = document.getElementById("app");
+  let body;
+  if (state.screen === "self") {
+    body = renderCharGrid("使用キャラクターを選択", "まず自分の使用キャラを選んでください", "self", false);
+  } else if (state.screen === "opponent") {
+    const sub = state.selfId ? "使用: " + esc(charById(state.selfId).name) : "";
+    body = renderCharGrid("対戦相手を選択", sub, "opponent", true);
+  } else if (state.screen === "matchup" && state.selfId && state.oppId) {
+    body = renderMatchup();
+  } else if (state.screen === "personal") {
+    body = renderPersonal();
+  } else {
+    state.screen = "self";
+    body = renderCharGrid("使用キャラクターを選択", "まず自分の使用キャラを選んでください", "self", false);
+  }
+  const bar = (state.screen !== "personal" && state.screen !== "self" && state.selfId)
+    ? '<button class="personal-bar-btn" data-nav="personal">📝 ' + esc(charById(state.selfId).name) + '用メモを開く</button>'
+    : "";
+  app.innerHTML = bar + body + (ui.backupOpen ? renderBackupModal() : "");
+  attachHandlers();
+}
+
+function renderCharGrid(title, sub, mode, showBack) {
+  const cards = CHARACTERS.map((c, i) => {
+    let countHtml = "";
+    if (mode === "opponent" && state.selfId) {
+      const mm = state.store[pairKey(state.selfId, c.id)];
+      const n = mm && mm.notes ? mm.notes.length : 0;
+      if (n > 0) countHtml = '<span class="char-count">' + n + '</span>';
+    }
+    return '<button class="char-btn" data-pick="' + mode + '" data-id="' + c.id + '">' +
+      countHtml +
+      '<span class="char-tag" style="color:hsl(' + [32,20,10,200,165,45][i % 6] + ',45%,62%)">' + esc(c.tag) + '</span>' +
+      '<span class="char-name">' + esc(c.name) + '</span>' +
+    '</button>';
+  }).join("");
+  return (
+    '<div class="header">' +
+      '<div class="header-row">' +
+        (showBack ? '<button class="back-btn" data-nav="self">' + iconChevronLeft() + '</button>' : '') +
+        '<div><h1 class="title display">' + esc(title) + '</h1>' + (sub ? '<p class="sub">' + esc(sub) + '</p>' : '') + '</div>' +
+        '<div style="margin-left:auto">' + backupLinkHtml() + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="char-grid">' + cards + '</div>'
+  );
+}
+
+function impDots(level) {
+  let s = "";
+  for (let i = 1; i <= 3; i++) s += i <= level ? "●" : "○";
+  return s;
+}
+function formatFrame(n, kind) {
+  const prefix = kind === "guard" ? "G" : kind === "hit" ? "H" : "";
+  if (n > 0) return prefix + "+" + n + "F";
+  if (n < 0) return prefix + n + "F";
+  return prefix + "0F";
+}
+function frameColor(n) {
+  if (n > 0) return "var(--red)";
+  if (n < 0) return "var(--c-macro)";
+  return "var(--text-dim)";
+}
+
+function microTagColor(tag) {
+  if (tag === "DP") return "var(--green)";
+  if (tag === "DI") return "var(--red)";
+  return "var(--text-dim)";
+}
+
+const RCP_SPECIALS = {
+  CDR: ["CDR", "#3E9C68"], DR: ["DR", "#3E9C68"], DRC: ["DRC", "#3E9C68"],
+  DI: ["DI", "#C1503F"], SA1: ["SA1", "#9B7EDE"], SA2: ["SA2", "#9B7EDE"], SA3: ["SA3", "#9B7EDE"], CA: ["CA", "#9B7EDE"],
+  JC: ["jc", "#585A63"], TC: ["TC", "#4FBDBA"], OD: ["OD", "#E8A33D"],
+  PC: ["PC", "#E0566B"], C: ["C", "#E8914A"],
+};
+const RCP_ARROWS = { "1": "↙", "2": "↓", "3": "↘", "4": "←", "5": "・", "6": "→", "7": "↖", "8": "↑", "9": "↗" };
+const RCP_IMG = {
+  PL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAO1UlEQVR42p1YaWxc13k93733vdm5DMVNpMiRRIpabVlyLMlyLMl2YsVNbLi25KRJCtRx0TaO86N/FLRISLYIkPwwiiBIkPxK7bpJLMVoEceBF9WU5EWqLMW2FloSKYkUJVJchzOc7S33fv3xhiNq8dIMMMDM4M19553vfuc79xA+42vX3r1y365dBkQMAF8/cq7KDzkbjO9u0o7XRa5eoj2/BoIgpMwZwSPKss4JFXqvUPCP/2HHnVOVtZjlPiL9We5Ln3oFM3UD1EtkAOCr7xy7T/v6G8XZufucTK7dz7tw0nPwcnlo1wcJAWEryEgI4doE7HgEdnV0LFpbdUiq0H/+5t9++Efs26fBTN09PdTb22v+bIC79u6V+3bv1gDwxDvHvux7/p7SePqezMVxTJ8bRmlqBsbTmohAAhQsx2AGmMFgQFhCRBbVUrKzDbWdrYjWJz4gwrO/vXfLC5+FzY8FuK2vTx3cscO/b+/LLXVNDT9xpuceu3r8LCZPDhjteCxDSghLEVF5CV7IOgJ0BBAIxtOsHdcIS1DDbStE693rYNdE+3KjY8+8vOuR058Ekj4J3KOv7v+CsCO/mjk90jL85lGtHRcqEpIQBJiAJpQBEvN1OIkIRhuw50MoAZAAWQp+sWSEJU1qx12qYX1Hlr3CP7x4//Zfz9/zUwHOX7jrf/q+yVo9d/GN92jy1HnfioYVEYHZlFFQBQ4FiCo/MTOM48GKRVDd0Yra1SlkL43j6pFTkLYCawO/UNLN61fIjofvhe+UvvfifVt/fCuQdEtwfYe+yVo8f/Z3B0x2eAx2PCKM4TIeviU41gasDYStAGOw6PYOJG9bDhmNgMubcvB3fXCmMpC2BRIEL1fk6lSzWfm1B6Wfn/3eSzsfuAmkWNgQB3fs8B/54+v3M9TzA//9lskOj8KORwSXy0mVp+LK47Fh+AUHViSExJIGAAQSArUrU7ASURjHhXFcCClQv74T4KD8rA1ULEyzQ6PizN79vhWr+dGXnn/prw/u2OHv2rtXzuMKPnR3i/6nn+ZHN29uVtGq10cOvB+bPDEAOx4TYAMwXUc3gUBEgG+gImE03NmFxZ+/HfV3dKA4lUHuygQAoCrVDDYaJCXYGESS1ZgbHoeXKwBCAIYhQzYVxqfAWpuartRDseqlv9+/5+mr3d3d4uDBgywAoLunByBiUrFf5K/MNl492q/tRFTAmEpHzpeSynvNaINocx2WP3EfGu5aBRGxoX2N5NqlkOEwMhfGUErPQSgVaI5hSFshuToF7WlUml8bWNGIGD1yCm56Lrxo46pfgVmhpwcASGzr7lO9ROahl17dKaT98MXX3vGlrVSw1agCioSA8TXY15WFSQjIsA2/6ADM0L5GvKUeVUub4WRymDl9EUJKMDOIAN9xUdPRgsiiahhPX9cBQko59PphP97eunHD0z9+spfIbOvuk2J7z3YDgEKRcM/0mSEujKdJWMGi82UlALrkIJSIoW3nJix9ZCtUNIT8yAQKIxNQ0dCCwcNIrlsGGQ4hc3YExek5kBRgBoSUCCXjiLfUwfi6XBUAhiFsC7mxGTF74TLXbVz2TwAiB3q2a9FLZB742d57SVqbxo6cYhlSkvk6zQWI0HDHCix7fDviqWbEWhqQXLsM2vUwdWIQ0FxhWrtehcXi7Bxm+i/CisUgbIXSdAaX3ziOzPkxEDhg0WeQEAAYwlJi/L1+k2hd3L72sT2PERErAIg0Vj+Zn5njwvSsscJ28LjlyWVcH1XtjWjevgF+sQTjemCtUbcmhdkzl5Advoq5S+NIpJrgl9xAA7VB3dqlyA6PI332EkK1cThTGUyfHoKfKyDalETDPetRlWrC5AcDmD4zDGlJSNtGfmwaTjbP1auWPAngBbV627fjUOr+mZPniJglIRgQrH2QZQEASukcnJksRNQONM8YWIkoala2Yfzdk5g+MYhoa32wLYggpEC0qRahqii8XBGX9x8DtEG8pR7Je29HYvliyEgYUgrU39GJmYERsGGQFNBay5mBYUSbkptCaE/Jrief2mI3JZ8ZP3IS7HpEUsKUXNSv78SSBz+HwtUZ5EbGIcI2qlKLwb5fBsmI1CaQHR5HYWwSsaY6xFrqYXwfuUvjGHv7FApXp0FskGhtRPM969C4eQ1irfUAAON5ML6GsBVmz1+BX3QgpAAbBgyb+ttW2MUz+fdVuL5qMxjkZvJaKCG146J581o0blkDCMKijV2YuzyB9EdDSK5dDisaAkwwNeyqGGo6WzD27gxmTl6AcT1MnhhEbmQSRIREWyPqb+9APNUIoRSM58MvloK5LASYGdK2EE5Ww5nOBiIuBZx0lkkpRFI1W5UMh7p0oQTWGlob1K5YgsYta+CXHDADVe2NqEotxuy5Ycx+dAFNW9YFsgLAc1zUrVmGzOAo5q5MInP+MkgIJFcsQe2apYgvqYewFLTjwXdcEIlAoOcFnxlEhGhjLTLnLgWNIgR00SHtelANtEJpctp1XsMYAwFGOFlV3oQGRAJEhPo7ViA/MoGZ/iHUrEzBioUDNwNARsNQERvOTAbVK9rQsLEL4YYakBDQjgvtORBCQJSB8XVOINjP0YYaCCsQdCLAaE3sepAR2SrYeDXa9cFGk7AVMhevBk8rBACCdn3E2+pRtWwxilMZzH40BGlZFfHVvg/t+FC2jcV3r0WstR7a9eAVglJa0TCkXZ4mC3SVEAwBow3CdVWw4xEYbQLQAIzWAOkqQfOUMyAsC4XxGWTPj0GG7IXuDsnblkNFI0ifuQQ3m4eQEsY3UJEQEsua4RVKyF2ZhPYC26+iIbDRmDx+FpnB0YAhc80zcnltNsE8Dy+qCaYTUQDeGIAZQkg7J2wFEmVDIAnTJwdhXL8ivsbxkGitR3VHKwrTGUz3X4S0FACG8TWqli2GjISQ7h8GfAPtuJg6fhYX9vbh8uvvITt4uWxs+WaPV3Y30YbaawaYAFYS2uO8khQatiISRJJZawjLQn48jfTACGrXpKCLXvAHZtStW4bMwGWk+4dQt3opRNgGDCPaWIdwfTWKE7MYevkdlNJZONMZxJqSWLLzc6hZ0Qbj+agcDxY4SgLAWiPWXAdSgZklKViGbDI5fUX4c4UBuyoKshQqvk8JTH4wCF3yKsxq10N8cR1qu5bAmcki3T8EOx6FdjxMHO2HM5uHYYO5kXFY4TDavrQFy3bfj7oNXRC2VT6jULm817MnbAVnNgs2JhgC0TCrsAWTxqAqXZ46Gm1vQrg2JkrTWUghIJRCcXIW6f5hLLqjA7rkBuKqDeo3rMDc0FVMn7oAL1/C3OVxlKYyEFIgvKgai9avQHVHK0TIhvE86KJTtmh0zYDMn2MoqOrYO6cx8adzIEEwnkaopZ7Y0yiezx5Wwy+/erTmzpUTVamWhuJ4mmErYmNASmHqw0HUdi0BZCA3KmTDBQOCoX3G1IeDIAKq25pQs2YpEssWQ4VtaNeDdgJg8+DmgVWagwGhJLxMDlffOwMhAFIKxikhkWoWhdFpZ/TMwYPi0slX0v5c4VCyK8UsSM/zL5SAMzuHmVMXEK6Og43B5PEzGH7lf+EXXLDrIrGkAe1/cTfaH/k8alalQETwS065dOKanbrBjc+zZ3yNcLIKNcubYXT5xlLo6uVLuHB+7H0XQ+cUAMwODv978z0bHo821JIznYVQEsyADFmY/PA8wEBudAqz569ACEJVWxPq1i1HfGkzhKXgux7gOAGoBbLFRJ+YDMzzmVy9FJkLY9COh1hrA9vRCM0cPfM8ABbo7haH//W7r3n5Qn/jxlXCd9yyk+Syi/YxevgkskOjqG5vxvKvfB7tX7kbic4WMBv4jhMogxDX6wfxzSnKTQgJxvUQa1mEWHMSxvHM4rvXytmTA5Pn3t33a2YmsQ3bBQDfmZj+l7qVSynaVMfGDSSBTWDrVSiERFsT2r+8GfHOFjAD2gkaZ54xuuG9EC1/QkrAzFC2hZrOVkSbakz14maaPnjyWSCd2d5zQBIAdDOLXiJ++KXXDvmOuef0f7ysrWhYggEIgi46aL5rNRq3roWTLQRTYYGaBV1JFTh8w8GbF4KrfOFrUiMlfMfRSloye3Jo8MA/f+v2buZSL1FwqkMPACKeGxx5KtxQk2vatBZevmiEkgEjlsL02WE42QJUyJqPD4I9bVsVy34duPI5mm+ZmAHMBObyPPZ9thMJ1o7mK/uPfwtEBfQEVwoA6O0ls+vFF2XfnqfOOpn036Ye2CRrO9uNM5dnAJBKwp3NI3N2pDJTVdiGUAL5K5PQjgsSVEkQ5sEz860TvYpcB8dRUsonstT4wff3DPT9/NC2H/xA9fYGcV/lBN+/bx9v6+tTbzz0xRMdj+8u1d/W9cXc5QldmJghaVsEIeDMZFHT2QYVCSF3aRyjb5/E6FsnAGNQ3dEC4/kAiVt3LNGNXitAKoRvxxPW9LFTPz38w2e+v627Tx3s/Rv/U8OjR18/sMcOx390/vcHMXFiQFuxsGTNiDYkIUMWMsNXgzFlKYANOh7fgVAyAeN/TNRXBkgIggpmNkIq2NG4SJ86+9M3v/P175ZjOLNwZ8gb1xl+7jmzra9PvfrAjrc6dn9tuHZV6gt2Ih7KDo35Rht4hRI52TyUbZVNKMMvuSAQqjpaArtVnrmVBplHRUA5t9NWNCaJGYWhK3v2//1Xv38rcJ8YYM6Hig/91x/WxxY1/tzLFrdcPvQnTJ0+r1kzpK2EkJLmbSgRsOwvt93EIl3LMxnERihbhWIxOLm5j0pDY99549t/9eYu3iv30W79/46AF0RhYlff4b/ztP5HJ13qSH90EZmBYZTSWeO7PkslyXg+Jdek0PbgJviuG2Q9REGsI0jIcBjKCkEXC6PC83+We/GVn7zxwrP5jwsuP3OI3t3NYr6jNv7yl9GlXRseZ8HfcLNzm0szuYQzMwc3k0cpnQH7PlrvvxMUCYFIQCoFNga+UypByWO2FL9RuvDbfTt3ztyYgf/5Kf/NbAIAnnj72HLN/lZB2Ko93ekUSy2CuYoNQwN5KeUoCIMQ4khYirf3PXBv//Vrbde3nIc3vP4PsoiN3c/94rYAAAAASUVORK5CYII=",
+  PM: "data:image/png;base64,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",
+  PH: "data:image/png;base64,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",
+  KL: "data:image/png;base64,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",
+  KM: "data:image/png;base64,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",
+  KH: "data:image/png;base64,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",
+  PN: "data:image/png;base64,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",
+  KN: "data:image/png;base64,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",
+  PO: "data:image/png;base64,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",
+  KO: "data:image/png;base64,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",
+};
+function rcpBtnIcon(b) {
+  if (b === "PP" || b === "KK") {
+    const src = RCP_IMG[b === "PP" ? "PO" : "KO"];
+    return '<img class="rcp-ico-img" src="' + src + '"><img class="rcp-ico-img" src="' + src + '">';
+  }
+  if (b === "P" || b === "K") {
+    return '<img class="rcp-ico-img" src="' + RCP_IMG[b === "P" ? "PN" : "KN"] + '">';
+  }
+  const isKick = b[1] === "K";
+  const key = (isKick ? "K" : "P") + b[0];
+  const src = RCP_IMG[key];
+  return src ? '<img class="rcp-ico-img" src="' + src + '">' : "";
+}
+function rcpBtnColor(b) {
+  if (b === "PP" || b === "KK") return "#E8A33D";
+  if (b[0] === "L") return "#3FC0C9";
+  if (b[0] === "M") return "#C9C34A";
+  return "#D4586B";
+}
+function normalizeRecipe(s) {
+  return String(s)
+    .replace(/[\uFF01-\uFF5E]/g, function (ch) { return String.fromCharCode(ch.charCodeAt(0) - 0xFEE0); })
+    .replace(/\u3000/g, " ")
+    .toUpperCase()
+    .replace(/\s+/g, " ")
+    .trim();
+}
+function renderRecipe(recipe) {
+  const tokens = normalizeRecipe(recipe).split(" ").filter(Boolean);
+  if (!tokens.length) return "";
+  const parts = tokens.map(function (tok) {
+    const up = tok.toUpperCase();
+    if (RCP_SPECIALS[up]) {
+      return '<span class="rcp-step"><span class="rcp-tag" style="background:' + RCP_SPECIALS[up][1] + '">' + RCP_SPECIALS[up][0] + '</span></span>';
+    }
+    const m = up.match(/^([1-9]+)?(J)?(OD)?(LP|MP|HP|LK|MK|HK|PP|KK|P|K)?(PC|TC|C)?$/);
+    if (!m || (!m[1] && !m[2] && !m[4])) {
+      return '<span class="rcp-step"><span class="rcp-plain">' + esc(tok) + '</span></span>';
+    }
+    let s = '<span class="rcp-step">';
+    if (m[1]) {
+      s += '<span class="rcp-arrows">' + m[1].split("").map(function (d) { return RCP_ARROWS[d] || d; }).join("") + '</span>';
+    }
+    if (m[2]) s += '<span class="rcp-tag" style="background:#5B8DEF">J</span>';
+    if (m[3]) s += '<span class="rcp-tag" style="background:#E8A33D">OD</span>';
+    if (m[4]) s += rcpBtnIcon(m[4]);
+    if (m[5]) {
+      const sufColor = m[5] === "PC" ? "#E0566B" : m[5] === "C" ? "#E8914A" : "#4FBDBA";
+      s += '<span class="rcp-tag" style="background:' + sufColor + '">' + m[5] + '</span>';
+    }
+    return s + '</span>';
+  });
+  return '<div class="rcp-row">' + parts.join('<span class="rcp-sep">▸</span>') + '</div>';
+}
+
+function backupLinkHtml() {
+  if (getFbConfig()) {
+    let label = "☁ 同期", style = "";
+    if (cloud.status === "synced") { label = "☁ 同期済み"; style = "color:var(--green)"; }
+    else if (cloud.status === "syncing" || cloud.status === "loading") { label = "☁ 同期中…"; style = "color:var(--accent)"; }
+    else if (cloud.status === "nologin") { label = "☁ ログイン"; style = "color:var(--accent);font-weight:700"; }
+    else if (cloud.status === "error") { label = "☁ エラー"; style = "color:var(--red);font-weight:700"; }
+    return '<button class="save-link" style="' + style + '" data-open="backup">' + label + '</button>';
+  }
+  const stale = !state.lastBackupAt || (Date.now() - state.lastBackupAt) > 14 * 24 * 60 * 60 * 1000;
+  if (stale) return '<button class="save-link" style="color:var(--accent);font-weight:700" data-open="backup">⚠ バックアップ</button>';
+  return '<button class="save-link" data-open="backup">バックアップ</button>';
+}
+
+function driveBar(n) {
+  let s = '<span class="dg">';
+  for (let i = 0; i < 6; i++) s += '<span class="dg-cell' + (i >= n ? ' on' : '') + '"></span>';
+  return s + '</span>';
+}
+
+function renderNoteCard(item) {
+  const cat = catById(item.category);
+  const cardKey = (renderingWip ? "wip::" : "") + item.id;
+  const expanded = ui.expandedId === cardKey;
+  if (ui.editingId === item.id) {
+    if (renderingWip === !!ui.editingFromWip) return renderForm(item.id);
+    return "";
+  }
+  let leftChip = "";
+  if (item.category === "punish" || item.category === "setplay") {
+    leftChip = (item.frame !== null && item.frame !== undefined)
+      ? '<span class="chip chip-fixed" style="color:' + frameColor(item.frame) + '">' + formatFrame(item.frame, item.frameKind) + '</span>'
+      : '<span class="chip chip-fixed"></span>';
+  } else if (item.category === "combo") {
+    leftChip = item.damage != null
+      ? '<span class="chip chip-fixed" style="color:#1B1C22;background:var(--accent)">' + item.damage + '</span>'
+      : '<span class="chip chip-fixed"></span>';
+  }
+  const chipParts = [];
+  if (isWip(item.id)) chipParts.push('<span class="chip" style="color:#fff;background:var(--red)">課題</span>');
+  if (renderingWip && (item.origin || "").trim()) {
+    chipParts.push('<span class="chip" style="color:' + cat.color + ';background:rgba(255,255,255,0.07)">' + esc(item.origin.trim() + ((item.sub || "").trim() ? "・" + item.sub.trim() : "")) + '</span>');
+  }
+  if (item.category === "micro" && item.microTag) chipParts.push('<span class="chip" style="color:#fff;background:' + microTagColor(item.microTag) + '">' + item.microTag + '</span>');
+  if (item.category === "setplay" && item.throwOk) chipParts.push('<span class="chip" style="color:#fff;background:var(--green)">投○</span>');
+  if (item.category === "setplay" && item.shimmyOk) chipParts.push('<span class="chip" style="color:#fff;background:#9B7EDE">シ○</span>');
+  if ((item.category === "setplay" || item.category === "combo") && item.position) chipParts.push('<span class="chip" style="color:#fff;background:' + (item.position === "端" ? "var(--c-punish)" : "var(--c-macro)") + '">' + item.position + '</span>');
+  if (item.drive !== null && item.drive !== undefined) chipParts.push(driveBar(item.drive));
+  let rightChips = chipParts.join("");
+  let body = "";
+  if (expanded) {
+    body = '<div class="note-body-wrap"><div class="note-divider"></div>' +
+      ((item.recipe || "").trim() ? renderRecipe(item.recipe) : "") +
+      '<p class="note-body">' + esc(item.body || "（内容は未記入）") + '</p>' +
+      '<div class="note-actions">' +
+        (renderingWip ? "" : '<button style="color:rgba(255,255,255,0.6)" data-move-note="up" data-mn-id="' + item.id + '">↑ 上へ</button>' +
+        '<button style="color:rgba(255,255,255,0.6)" data-move-note="down" data-mn-id="' + item.id + '">↓ 下へ</button>') +
+        '<button style="color:rgba(255,255,255,0.5)" data-edit="' + item.id + '" data-edit-src="' + (renderingWip ? "wip" : "") + '">編集</button>' +
+        '<button style="color:var(--red)" data-wip="' + item.id + '">' + (isWip(item.id) ? '課題解除' : '課題にする') + '</button>' +
+        (ui.confirmDeleteId === item.id
+          ? '<button style="color:#fff;background:var(--red);border-radius:5px;padding:3px 10px;margin-left:auto;font-weight:700" data-delete="' + item.id + '">本当に削除する？</button>'
+          : '<button style="color:var(--red);margin-left:auto" data-delete="' + item.id + '">削除</button>') +
+      '</div></div>';
+  }
+  return '<div class="note-card" style="border-left-color:' + cat.color + '">' +
+    (function () {
+      if (item.category === "combo" && item.damage != null) {
+        const pct = Math.max(0, Math.min(100, (item.damage / 10000) * 100));
+        const p = pct.toFixed(1);
+        const tickStops = [[7, 0.48], [15, 0.48], [23, 0.48], [31, 0.48], [39, 0.48], [47, 0.48], [55, 0.12]].map(function (tp) {
+          const t = tp[0];
+          const c = 'rgba(46,229,126,' + tp[1] + ')';
+          return 'transparent calc(' + t + '% - 1px), ' + c + ' calc(' + t + '% - 1px), ' + c + ' ' + t + '%, transparent ' + t + '%';
+        }).join(', ');
+        return '<button class="note-head" style="background:linear-gradient(100deg, transparent 0%, ' + tickStops + ', transparent 100%) left bottom / 100% 14% no-repeat, linear-gradient(100deg, rgba(255,210,30,0.1) 0% ' + p + '%, rgba(255,210,30,0.5) ' + p + '% calc(' + p + '% + 1.5px), rgba(47,112,224,0.12) calc(' + p + '% + 1.5px) 100%)" data-toggle="' + cardKey + '">';
+      }
+      return '<button class="note-head" data-toggle="' + cardKey + '">';
+    })() +
+      '<div class="note-title-line">' +
+        '<span class="imp-dots" style="color:' + cat.color + '">' + impDots(item.importance) + '</span>' +
+        leftChip +
+        '<span class="note-title">' + esc(item.title) + '</span>' +
+      '</div>' +
+      (rightChips ? '<div class="right-chips">' + rightChips + '</div>' : "") +
+    '</button>' +
+    body +
+  '</div>';
+}
+
+function buildNoteListHtml(m) {
+  let listHtml = "";
+  if (ui.adding) listHtml += renderForm(null);
+
+  const minImp = ui.minImp || 1;
+  const visible = m.notes.filter((n) => n.id === ui.editingId || (n.importance >= minImp && (!ui.wipOnly || isWip(n.id))));
+  lastGroupKeys = [];
+  lastSubKeys = [];
+  const wipNotes = ui.wipOnly ? [] : visible.filter((n) => isWip(n.id) && (ui.editingId !== n.id || ui.editingFromWip));
+  if (wipNotes.length) {
+    listHtml += '<div class="section-head"><span class="section-dot" style="background:var(--red)"></span>' +
+      '<span class="section-label display" style="color:var(--red)">🔥 取り組み中の課題</span>' +
+      '<span class="section-count">(' + wipNotes.length + ')</span></div>';
+    renderingWip = true;
+    listHtml += '<div class="note-list">' + wipNotes.map(renderNoteCard).join("") + '</div>';
+    renderingWip = false;
+  }
+
+  if (m.notes.length === 0 && !ui.adding) {
+    listHtml += '<div class="empty-state"><p>まだメモがありません</p><p>右下の + から追加できます</p></div>';
+  } else if (visible.length === 0 && !ui.adding) {
+    listHtml += '<div class="empty-state"><p>条件に合うメモがありません</p><p>フィルターを解除すると表示されます</p></div>';
+  } else {
+    activeCategories().forEach((cat) => {
+      const items = visible.filter((n) => n.category === cat.id);
+      if (items.length === 0) return;
+      listHtml += '<div class="section-head"><span class="section-dot" style="background:' + cat.color + '"></span>' +
+        '<span class="section-label display" style="color:' + cat.color + '">' + cat.label + '</span>' +
+        '<span class="section-count">(' + items.length + ')</span></div>';
+      const hasGroups = items.some((n) => (n.origin || "").trim() !== "" || (n.sub || "").trim() !== "");
+      if (hasGroups) {
+        const groups = {};
+        let order = [];
+        items.forEach((n) => {
+          const key = (n.origin || "").trim() || "その他";
+          if (!groups[key]) { groups[key] = []; order.push(key); }
+          groups[key].push(n);
+        });
+        const savedOrder = (m.groupOrder && m.groupOrder[cat.id]) || [];
+        order = order.slice().sort((a, b) => {
+          const ia = savedOrder.indexOf(a); const ib = savedOrder.indexOf(b);
+          if (ia === -1 && ib === -1) return 0;
+          if (ia === -1) return 1;
+          if (ib === -1) return -1;
+          return ia - ib;
+        });
+        const canMoveGroups = order.length > 1;
+        order.forEach((key) => {
+          const scope = state.screen === "personal" ? "p_" + state.selfId : pairKey(state.selfId, state.oppId);
+          const gk = scope + "::" + cat.id + "::" + key;
+          lastGroupKeys.push(gk);
+          const open = !!ui.openOrigins[gk];
+          const g = groups[key];
+          // サブグループ集計（開閉状態に関わらずキーを収集）
+          const subGroups = {};
+          let subOrderArr = [];
+          const loose = [];
+          g.forEach((n) => {
+            const sk = (n.sub || "").trim();
+            if (!sk) { loose.push(n); return; }
+            if (!subGroups[sk]) { subGroups[sk] = []; subOrderArr.push(sk); }
+            subGroups[sk].push(n);
+          });
+          const savedSub = (m.subOrder && m.subOrder[cat.id + "::" + key]) || [];
+          subOrderArr = subOrderArr.slice().sort((a, b) => {
+            const ia = savedSub.indexOf(a); const ib = savedSub.indexOf(b);
+            if (ia === -1 && ib === -1) return 0;
+            if (ia === -1) return 1;
+            if (ib === -1) return -1;
+            return ia - ib;
+          });
+          subOrderArr.forEach((sk) => lastSubKeys.push(gk + "::" + sk));
+          const moveBtns = canMoveGroups
+            ? '<button class="mini-move" data-move-group="up" data-mg-cat="' + cat.id + '" data-mg-key="' + esc(key) + '">↑</button>' +
+              '<button class="mini-move" data-move-group="down" data-mg-cat="' + cat.id + '" data-mg-key="' + esc(key) + '">↓</button>'
+            : "";
+          const rt = ui.renameTarget;
+          const isRenamingGroup = rt && rt.type === "group" && rt.catId === cat.id && rt.key === key;
+          if (isRenamingGroup) {
+            listHtml += '<div class="origin-head-btn" style="color:' + cat.color + ';border-color:color-mix(in srgb, ' + cat.color + ' 55%, transparent);background:color-mix(in srgb, ' + cat.color + ' 18%, transparent);">' +
+              '<input type="text" class="rename-input" data-rename-input="1" value="' + esc(rt.value) + '">' +
+              '<button class="mini-move" data-rename-confirm="1" style="background:var(--green);color:#fff">✓</button>' +
+              '<button class="mini-move" data-rename-cancel="1">×</button>' +
+            '</div>';
+          } else {
+            const renameBtn = key === "その他" ? "" : '<button class="mini-move" data-rename-group="1" data-rg-cat="' + cat.id + '" data-rg-key="' + esc(key) + '">✎</button>';
+            listHtml += '<div class="origin-head-btn" style="color:' + cat.color + ';border-color:color-mix(in srgb, ' + cat.color + ' ' + (open ? 55 : 22) + '%, transparent);background:color-mix(in srgb, ' + cat.color + ' ' + (open ? 18 : 7) + '%, transparent);' + (open ? '' : 'opacity:0.85;') + '" data-origin-toggle="' + esc(gk) + '">' +
+              '<span>' + esc(key) + '</span><span class="section-count">(' + groups[key].length + ')</span>' +
+              '<span style="margin-left:auto;display:flex;align-items:center;gap:2px">' + renameBtn + moveBtns + (open ? iconChevronUp() : iconChevronDown()) + '</span>' +
+            '</div>';
+          }
+          if (open) {
+            listHtml += '<div class="group-body">';
+            if (subOrderArr.length === 0) {
+              listHtml += '<div class="note-list">' + g.map(renderNoteCard).join("") + '</div>';
+            } else {
+              if (loose.length) listHtml += '<div class="note-list">' + loose.map(renderNoteCard).join("") + '</div>';
+              const canMoveSubs = subOrderArr.length > 1;
+              subOrderArr.forEach((sk) => {
+                const sgk = gk + "::" + sk;
+                const sopen = !!ui.openSubs[sgk];
+                const subMove = canMoveSubs
+                  ? '<button class="mini-move" data-move-sub="up" data-ms-cat="' + cat.id + '" data-ms-group="' + esc(key) + '" data-ms-key="' + esc(sk) + '">↑</button>' +
+                    '<button class="mini-move" data-move-sub="down" data-ms-cat="' + cat.id + '" data-ms-group="' + esc(key) + '" data-ms-key="' + esc(sk) + '">↓</button>'
+                  : "";
+                const isRenamingSub = rt && rt.type === "sub" && rt.catId === cat.id && rt.groupKey === key && rt.key === sk;
+                if (isRenamingSub) {
+                  listHtml += '<div class="sub-head-btn" style="color:' + cat.color + ';border-left-color:color-mix(in srgb, ' + cat.color + ' 85%, transparent);background:rgba(255,255,255,0.07);">' +
+                    '<input type="text" class="rename-input" data-rename-input="1" value="' + esc(rt.value) + '">' +
+                    '<button class="mini-move" data-rename-confirm="1" style="background:var(--green);color:#fff">✓</button>' +
+                    '<button class="mini-move" data-rename-cancel="1">×</button>' +
+                  '</div>';
+                } else {
+                  const renameSubBtn = '<button class="mini-move" data-rename-sub="1" data-rs-cat="' + cat.id + '" data-rs-group="' + esc(key) + '" data-rs-key="' + esc(sk) + '">✎</button>';
+                  listHtml += '<div class="sub-head-btn" style="color:' + cat.color + ';border-left-color:color-mix(in srgb, ' + cat.color + ' ' + (sopen ? 85 : 45) + '%, transparent);background:rgba(255,255,255,' + (sopen ? '0.07' : '0.03') + ');' + (sopen ? '' : 'opacity:0.85;') + '" data-sub-toggle="' + esc(sgk) + '">' +
+                    '<span>' + esc(sk) + '</span><span class="section-count">(' + subGroups[sk].length + ')</span>' +
+                    '<span style="margin-left:auto;display:flex;align-items:center;gap:2px">' + renameSubBtn + subMove + (sopen ? iconChevronUp() : iconChevronDown()) + '</span>' +
+                  '</div>';
+                }
+                if (sopen || isRenamingSub) listHtml += '<div class="note-list sub-list">' + subGroups[sk].map(renderNoteCard).join("") + '</div>';
+              });
+            }
+            listHtml += '</div>';
+          }
+        });
+      } else {
+        listHtml += '<div class="note-list">' + items.map(renderNoteCard).join("") + '</div>';
+      }
+    });
+  }
+  return listHtml;
+}
+
+function renderSortRow() {
+  const impLabels = { 1: "すべて", 2: "中以上", 3: "高のみ" };
+  const minImp = ui.minImp || 1;
+  const impBtn = '<button class="sort-btn' + (minImp > 1 ? ' active' : '') + '" data-imp-cycle="1">重要度: ' + impLabels[minImp] + '</button>';
+  const wipBtn = '<button class="sort-btn' + (ui.wipOnly ? ' active' : '') + '" style="' + (ui.wipOnly ? 'background:var(--red);border-color:var(--red);color:#fff;' : '') + '" data-wip-only="1">🔥 課題のみ</button>';
+  const allOpen = lastGroupKeys.length > 0 && lastGroupKeys.every((k) => ui.openOrigins[k]);
+  const openBtn = '<button class="sort-btn" data-open-all="1"' + (lastGroupKeys.length === 0 ? ' style="opacity:0.35"' : '') + '>' + (allOpen ? "すべて閉じる" : "すべて開く") + '</button>';
+  return '<div class="sort-row">' + impBtn + wipBtn + openBtn + '</div>';
+}
+
+function renderMatchup() {
+  const m = currentMatchup();
+  const selfC = charById(state.selfId), oppC = charById(state.oppId);
+
+  let saveHtml = '<span class="save-indicator" style="color:transparent">.</span>';
+  if (ui.saveFlash === "saved") saveHtml = '<span class="save-indicator" style="color:var(--green)">保存済み</span>';
+  if (ui.saveFlash === "error") saveHtml = '<span class="save-indicator" style="color:var(--red)">保存失敗</span>';
+
+  const listHtml = buildNoteListHtml(m);
+
+  return (
+    '<div class="header">' +
+      '<div class="header-row" style="justify-content:space-between">' +
+        '<button class="back-btn" data-nav="opponent">' + iconChevronLeft() + '</button>' +
+        '<div style="display:flex;align-items:center;gap:12px">' +
+          backupLinkHtml() +
+          saveHtml +
+        '</div>' +
+      '</div>' +
+      (ui.saveFlash === "error" ? '<p style="font-size:10px;color:var(--red);margin:0 0 8px">保存に失敗しました（プライベートモード等でlocalStorageが使えない可能性があります）</p>' : '') +
+      '<div class="vs-row">' +
+        '<button class="vs-side" data-nav="self"><p class="vs-label">使用</p><p class="vs-name display">' + esc(selfC.name) + '</p></button>' +
+        '<span class="vs-mid display">VS</span>' +
+        '<button class="vs-side right" data-nav="opponent"><p class="vs-label">相手</p><p class="vs-name display">' + esc(oppC.name) + '</p></button>' +
+      '</div>' +
+    '</div>' +
+    renderSortRow() +
+    '<main>' + listHtml + '</main>' +
+    (!ui.adding && !ui.editingId ? '<button class="fab" data-add="1">+</button>' : '')
+  );
+}
+
+function renderPersonal() {
+  const m = currentMatchup();
+  const selfC = state.selfId ? charById(state.selfId) : null;
+
+  let saveHtml = '<span class="save-indicator" style="color:transparent">.</span>';
+  if (ui.saveFlash === "saved") saveHtml = '<span class="save-indicator" style="color:var(--green)">保存済み</span>';
+  if (ui.saveFlash === "error") saveHtml = '<span class="save-indicator" style="color:var(--red)">保存失敗</span>';
+
+  const listHtml = buildNoteListHtml(m);
+
+  return (
+    '<div class="header">' +
+      '<div class="header-row" style="justify-content:space-between">' +
+        '<div style="display:flex;align-items:center;gap:8px">' +
+          '<button class="back-btn" data-nav="opponent">' + iconChevronLeft() + '</button>' +
+          '<h1 class="title display">' + (selfC ? esc(selfC.name) + '用メモ' : '自分用メモ') + '</h1>' +
+        '</div>' +
+        '<div style="display:flex;align-items:center;gap:12px">' +
+          backupLinkHtml() +
+          saveHtml +
+        '</div>' +
+      '</div>' +
+      (ui.saveFlash === "error" ? '<p style="font-size:10px;color:var(--red);margin:0 0 8px">保存に失敗しました（プライベートモード等でlocalStorageが使えない可能性があります）</p>' : '') +
+    '</div>' +
+    renderSortRow() +
+    '<main>' + listHtml + '</main>' +
+    (!ui.adding && !ui.editingId ? '<button class="fab" data-add="1">+</button>' : '')
+  );
+}
+
+function renderForm(itemId) {
+  const isEdit = itemId !== null;
+  const catBtns = activeCategories().map((c) => (
+    '<button class="seg-btn' + (ui.draft.category === c.id ? ' active' : '') + '" style="' + (ui.draft.category === c.id ? 'background:' + c.color : '') + '" data-set-category="' + c.id + '">' + c.label + '</button>'
+  )).join("");
+  const impBtns = [1, 2, 3].map((n) => (
+    '<button class="seg-btn' + (ui.draft.importance === n ? ' active' : '') + '" style="' + (ui.draft.importance === n ? 'background:var(--accent)' : '') + '" data-set-importance="' + n + '">' + IMP_LABELS[n] + '</button>'
+  )).join("");
+  let frameField = "";
+  if (ui.draft.category === "punish") {
+    let opts = "";
+    for (let f = 12; f >= -12; f--) {
+      opts += '<option value="' + f + '"' + (parseInt(ui.draft.frame, 10) === f ? " selected" : "") + '>' + formatFrame(f) + '</option>';
+    }
+    frameField = '<p class="field-label">フレーム（何F以上の技が確定するか）</p>' +
+      '<select class="frame-select" data-draft-frame="1">' + opts + '</select>';
+  }
+  let microField = "";
+  if (ui.draft.category === "micro") {
+    const opts2 = [[null, "なし"], ["DP", "DP"], ["DI", "DI"]];
+    const btns = opts2.map(([val, label]) => {
+      const active = ui.draft.microTag === val;
+      const color = val === "DP" ? "var(--green)" : val === "DI" ? "var(--red)" : null;
+      return '<button class="seg-btn' + (active ? ' active' : '') + '" style="' + (active && color ? 'background:' + color : active ? 'background:#4a4c55' : '') + '" data-set-microtag="' + (val || "") + '">' + label + '</button>';
+    }).join("");
+    microField = '<p class="field-label">技タイプ</p><div class="seg-row">' + btns + '</div>';
+  }
+  const posBtns = [[null, "なし"], ["端", "端"], ["中央", "中央"]].map(([val, label]) => {
+    const active = ui.draft.position === val;
+    const color = val === "端" ? "var(--c-punish)" : val === "中央" ? "var(--c-macro)" : null;
+    return '<button class="seg-btn' + (active ? ' active' : '') + '" style="' + (active && color ? 'background:' + color : active ? 'background:#4a4c55' : '') + '" data-set-position="' + (val || "") + '">' + label + '</button>';
+  }).join("");
+  const posField = '<p class="field-label">位置</p><div class="seg-row">' + posBtns + '</div>';
+  const dcur = (ui.draft.drive === null || ui.draft.drive === undefined || ui.draft.drive === "") ? "" : ui.draft.drive;
+  const dgBtns = [["", "なし"], [0, "0"], [1, "1"], [2, "2"], [3, "3"], [4, "4"], [5, "5"], [6, "6"]].map(([val, label]) => {
+    const active = dcur === val;
+    return '<button class="seg-btn' + (active ? ' active' : '') + '" style="' + (active && val !== "" ? 'background:#3E9C68' : active ? 'background:#4a4c55' : '') + '" data-set-drive="' + val + '">' + label + '</button>';
+  }).join("");
+  const dgField = '<p class="field-label">消費Dゲージ（本数）</p><div class="seg-row">' + dgBtns + '</div>';
+  let recipeField = "";
+  if (ui.draft.category === "combo" || ui.draft.category === "setplay") {
+    recipeField = '<p class="field-label">レシピ（テンキー表記・任意）</p>' +
+      '<input type="text" placeholder="例：2HP CDR HP 4HP 236HK" value="' + esc(ui.draft.recipe || "") + '" data-draft="recipe">' +
+      (ui.draft.recipe && String(ui.draft.recipe).trim() ? '<div style="margin:4px 0 0">' + renderRecipe(ui.draft.recipe) + '</div>' : "");
+  }
+  let damageField = "";
+  if (ui.draft.category === "combo") {
+    damageField = '<p class="field-label">ダメージ</p>' +
+      '<input type="text" inputmode="numeric" placeholder="例：4520" value="' + esc(ui.draft.damage || "") + '" data-draft="damage">' +
+      posField + dgField;
+  }
+  const existingOrigins = [];
+  (currentMatchup().notes || []).forEach((n) => {
+    if (n.category !== ui.draft.category) return;
+    const o = (n.origin || "").trim();
+    if (o && existingOrigins.indexOf(o) === -1) existingOrigins.push(o);
+  });
+  const curOrigin = String(ui.draft.origin || "").trim();
+  if (curOrigin && existingOrigins.indexOf(curOrigin) === -1) existingOrigins.unshift(curOrigin);
+  let originField;
+  if (existingOrigins.length === 0 || ui.originNewMode) {
+    originField = '<input type="text" placeholder="例：OD竜巻〆" value="' + esc(ui.draft.origin || "") + '" data-draft="origin">' +
+      (existingOrigins.length ? '<p class="field-label" style="margin-top:-2px"><button type="button" class="save-link" style="padding:0" data-origin-pick="1">← 既存のグループから選ぶ</button></p>' : "");
+  } else {
+    const oOpts = '<option value=""' + (curOrigin === "" ? " selected" : "") + '>（未設定）</option>' +
+      existingOrigins.map((o) => '<option value="' + esc(o) + '"' + (curOrigin === o ? " selected" : "") + '>' + esc(o) + '</option>').join("") +
+      '<option value="__new__">＋ 新しいグループを入力…</option>';
+    originField = '<select class="frame-select" data-origin-select="1">' + oOpts + '</select>';
+  }
+  const groupField = '<p class="field-label">グループ（任意・同じ名前でまとまります）</p>' + originField;
+  const existingSubs = [];
+  (currentMatchup().notes || []).forEach((n) => {
+    if (n.category !== ui.draft.category) return;
+    if ((n.origin || "").trim() !== curOrigin) return;
+    const o = (n.sub || "").trim();
+    if (o && existingSubs.indexOf(o) === -1) existingSubs.push(o);
+  });
+  const curSub = String(ui.draft.sub || "").trim();
+  if (curSub && existingSubs.indexOf(curSub) === -1) existingSubs.unshift(curSub);
+  let subInput;
+  if (existingSubs.length === 0 || ui.subNewMode) {
+    subInput = '<input type="text" placeholder="例：強K始動" value="' + esc(ui.draft.sub || "") + '" data-draft="sub">' +
+      (existingSubs.length ? '<p class="field-label" style="margin-top:-2px"><button type="button" class="save-link" style="padding:0" data-sub-pick="1">← 既存のサブグループから選ぶ</button></p>' : "");
+  } else {
+    const sOpts = '<option value=""' + (curSub === "" ? " selected" : "") + '>（未設定）</option>' +
+      existingSubs.map((o) => '<option value="' + esc(o) + '"' + (curSub === o ? " selected" : "") + '>' + esc(o) + '</option>').join("") +
+      '<option value="__new__">＋ 新しいサブグループを入力…</option>';
+    subInput = '<select class="frame-select" data-sub-select="1">' + sOpts + '</select>';
+  }
+  const subField = '<p class="field-label">サブグループ（任意）</p>' + subInput;
+  let setplayField = "";
+  if (ui.draft.category === "setplay") {
+    let sopts = '<option value=""' + (ui.draft.frame === "" || ui.draft.frame === null ? " selected" : "") + '>なし</option>';
+    for (let f = 12; f >= -12; f--) {
+      sopts += '<option value="' + f + '"' + (String(ui.draft.frame) === String(f) ? " selected" : "") + '>' + formatFrame(f) + '</option>';
+    }
+    const okiBtns = [["throwOk", "投げ○", "var(--green)"], ["shimmyOk", "シミー○", "#9B7EDE"]].map(([field, label, color]) => {
+      const active = !!ui.draft[field];
+      return '<button class="seg-btn' + (active ? ' active' : '') + '" style="' + (active ? 'background:' + color : '') + '" data-toggle-oki="' + field + '">' + label + '</button>';
+    }).join("");
+    const fkBtns = [["", "指定なし"], ["guard", "ガード時 G"], ["hit", "ヒット時 H"]].map(([val, label]) => {
+      const active = (ui.draft.frameKind || "") === val;
+      return '<button type="button" class="seg-btn' + (active ? ' active' : '') + '" style="' + (active ? 'background:#4a4c55' : '') + '" data-set-framekind="' + val + '">' + label + '</button>';
+    }).join("");
+    setplayField = '<p class="field-label">フレーム条件</p><div class="seg-row">' + fkBtns + '</div>' +
+      '<p class="field-label">フレーム（起き攻め時の有利F）</p>' +
+      '<select class="frame-select" data-draft-frame="1">' + sopts + '</select>' +
+      '<p class="field-label">位置</p><div class="seg-row">' + posBtns + '</div>' +
+      '<p class="field-label">起き攻めオプション（タップでON/OFF）</p><div class="seg-row">' + okiBtns + '</div>' +
+      dgField;
+  }
+  return (
+    '<div class="item-form">' +
+      '<div class="field-label-row"><p class="field-label" style="margin:0">題名</p>' + micBtn("title") + '</div>' +
+      '<input type="text" placeholder="例：中足対策" value="' + esc(ui.draft.title) + '" data-draft="title">' +
+      (ui.titleError ? '<p style="color:var(--red);font-size:11px;margin:2px 0 0">題名を入力してください</p>' : '') +
+      '<p class="field-label">カテゴリー</p>' +
+      '<div class="seg-row">' + catBtns + '</div>' +
+      groupField +
+      subField +
+      frameField +
+      microField +
+      recipeField +
+      damageField +
+      setplayField +
+      '<p class="field-label">重要度</p>' +
+      '<div class="seg-row">' + impBtns + '</div>' +
+      '<p class="field-label">課題</p>' +
+      '<div class="seg-row"><button type="button" class="seg-btn' + (ui.draft.wip ? ' active' : '') + '" style="' + (ui.draft.wip ? 'background:var(--red)' : '') + '" data-toggle-wip="1">' + (ui.draft.wip ? '🔥 課題中（タップで解除）' : '課題にする') + '</button></div>' +
+      '<div class="field-label-row"><p class="field-label" style="margin:0">詳細メモ</p>' + micBtn("body") + '</div>' +
+      '<textarea rows="4" placeholder="詳しい内容を記入" data-draft="body">' + esc(ui.draft.body) + '</textarea>' +
+      '<div class="form-actions">' +
+        '<button class="btn-cancel" data-cancel-form="1">✕ キャンセル</button>' +
+        '<button class="btn-save" data-save-form="' + (isEdit ? esc(itemId) : "new") + '">✓ 保存</button>' +
+      '</div>' +
+    '</div>'
+  );
+}
+function micBtn(field) {
+  const active = ui.recordingField === field;
+  return '<button type="button" class="mic-btn' + (active ? " recording" : "") + '" data-voice="' + field + '">' + (active ? "● 停止" : "🎤 音声入力") + '</button>';
+}
+
+function renderBackupModal() {
+  const json = JSON.stringify({ store: state.store, personalByChar: state.personalByChar }, null, 2);
+  return (
+    '<div class="modal-overlay" data-close-backup="1">' +
+      '<div class="modal" onclick="event.stopPropagation()">' +
+        '<div class="modal-head"><h3 class="display">同期・バックアップ</h3><button class="modal-close" data-close-backup="1">✕</button></div>' +
+        renderCloudSection() +
+        '<div class="hr"></div>' +
+        '<p class="desc">このデータはブラウザ内に自動保存されています。定期的にファイルとして保存しておくと安心です。</p>' +
+        '<button class="action-btn btn-amber" data-export-file="1">📥 ファイルに保存</button>' +
+        '<label class="action-btn btn-green" style="display:inline-block;margin-left:8px">📤 ファイルから復元<input type="file" accept=".json,application/json" data-import-file="1" style="display:none"></label>' +
+        '<p id="file-status" style="font-size:11px;color:var(--text-dim);margin:0 0 12px"></p>' +
+        '<div class="hr"></div>' +
+        '<p class="desc">テキストでコピー／貼り付けする場合はこちら：</p>' +
+        '<textarea id="backup-text" rows="5" readonly onclick="this.select()">' + esc(json) + '</textarea>' +
+        '<button class="action-btn btn-amber" data-copy-backup="1">コピー</button>' +
+        '<span id="copy-status" style="font-size:11px;color:var(--text-dim);margin-left:8px"></span>' +
+        '<div class="hr"></div>' +
+        '<p class="desc">保存しておいたテキストを貼り付けて復元：</p>' +
+        '<textarea id="import-text" rows="4" placeholder="ここに貼り付け"></textarea>' +
+        '<p id="import-error" style="font-size:11px;color:var(--red);margin:0 0 8px"></p>' +
+        '<button class="action-btn btn-green" data-import-backup="1">読み込む</button>' +
+        '<p style="font-size:11px;color:var(--text-dim);margin:10px 0 0">最終バックアップ: ' + (state.lastBackupAt ? new Date(state.lastBackupAt).toLocaleDateString("ja-JP") : "まだありません（📥で保存しておくと安心です）") + '</p>' +
+        '<p style="font-size:10px;color:var(--text-faint);margin:2px 0 0;text-align:right">build 2026-07-25 (66) share</p>' +
+      '</div>' +
+    '</div>'
+  );
+}
+
+function iconChevronLeft() { return '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>'; }
+function iconChevronDown() { return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A7D87" stroke-width="2" style="flex-shrink:0"><path d="M6 9l6 6 6-6"/></svg>'; }
+function iconChevronUp() { return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A7D87" stroke-width="2" style="flex-shrink:0"><path d="M18 15l-6-6-6 6"/></svg>'; }
+
+function attachHandlers() {
+  const app = document.getElementById("app");
+  app.querySelectorAll("[data-pick]").forEach((el) => {
+    el.addEventListener("click", () => {
+      const mode = el.getAttribute("data-pick");
+      const id = el.getAttribute("data-id");
+      if (mode === "self") pickSelf(id); else pickOpponent(id);
+    });
+  });
+  app.querySelectorAll("[data-nav]").forEach((el) => {
+    el.addEventListener("click", () => {
+      const t = el.getAttribute("data-nav");
+      if (t === "self") goSelf(); else if (t === "personal") goPersonal(); else goOpponent();
+    });
+  });
+  app.querySelectorAll("[data-imp-cycle]").forEach((el) => el.addEventListener("click", () => { const v = ui.minImp || 1; ui.minImp = v >= 3 ? 1 : v + 1; render(); }));
+  app.querySelectorAll("[data-wip-only]").forEach((el) => el.addEventListener("click", () => { ui.wipOnly = !ui.wipOnly; render(); }));
+  app.querySelectorAll("[data-open-all]").forEach((el) => el.addEventListener("click", () => {
+    if (lastGroupKeys.length === 0) return;
+    const allOpen = lastGroupKeys.every((k) => ui.openOrigins[k]) && lastSubKeys.every((k) => ui.openSubs[k]);
+    if (allOpen) { ui.openOrigins = {}; ui.openSubs = {}; }
+    else {
+      lastGroupKeys.forEach((k) => { ui.openOrigins[k] = true; });
+      lastSubKeys.forEach((k) => { ui.openSubs[k] = true; });
+    }
+    render();
+  }));
+  app.querySelectorAll("[data-origin-toggle]").forEach((el) => el.addEventListener("click", () => { const k = el.getAttribute("data-origin-toggle"); ui.openOrigins[k] = !ui.openOrigins[k]; render(); }));
+  app.querySelectorAll("[data-sub-toggle]").forEach((el) => el.addEventListener("click", () => { const k = el.getAttribute("data-sub-toggle"); ui.openSubs[k] = !ui.openSubs[k]; render(); }));
+  app.querySelectorAll("[data-move-sub]").forEach((el) => el.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const dir = el.getAttribute("data-move-sub");
+    const catId = el.getAttribute("data-ms-cat");
+    const groupKey = el.getAttribute("data-ms-group");
+    const key = el.getAttribute("data-ms-key");
+    updateMatchup((m) => {
+      const appear = [];
+      m.notes.forEach((n) => {
+        if (n.category !== catId) return;
+        if (((n.origin || "").trim() || "その他") !== groupKey) return;
+        const k = (n.sub || "").trim();
+        if (k && appear.indexOf(k) === -1) appear.push(k);
+      });
+      const okey = catId + "::" + groupKey;
+      const saved = (m.subOrder && m.subOrder[okey]) || [];
+      const cur = appear.slice().sort((a, b) => {
+        const ia = saved.indexOf(a); const ib = saved.indexOf(b);
+        if (ia === -1 && ib === -1) return 0;
+        if (ia === -1) return 1;
+        if (ib === -1) return -1;
+        return ia - ib;
+      });
+      const i = cur.indexOf(key);
+      const j = i + (dir === "up" ? -1 : 1);
+      if (i === -1 || j < 0 || j >= cur.length) return m;
+      const tmp = cur[i]; cur[i] = cur[j]; cur[j] = tmp;
+      const subOrder = Object.assign({}, m.subOrder || {});
+      subOrder[okey] = cur;
+      return Object.assign({}, m, { subOrder: subOrder });
+    });
+  }));
+  app.querySelectorAll("[data-move-note]").forEach((el) => el.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const id = el.getAttribute("data-mn-id");
+    const dir = el.getAttribute("data-move-note");
+    updateMatchup((m) => {
+      const notes = m.notes.slice();
+      const idx = notes.findIndex((it) => it.id === id);
+      if (idx === -1) return m;
+      const me = notes[idx];
+      const myKey = (me.origin || "").trim();
+      // 同カテゴリー・同グループ内の隣を探す
+      const step = dir === "up" ? -1 : 1;
+      let j = idx + step;
+      while (j >= 0 && j < notes.length) {
+        const other = notes[j];
+        if (other.category === me.category && (other.origin || "").trim() === myKey && (other.sub || "").trim() === (me.sub || "").trim()) break;
+        j += step;
+      }
+      if (j < 0 || j >= notes.length) return m;
+      const tmp = notes[idx]; notes[idx] = notes[j]; notes[j] = tmp;
+      return Object.assign({}, m, { notes: notes });
+    });
+  }));
+  app.querySelectorAll("[data-move-group]").forEach((el) => el.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const dir = el.getAttribute("data-move-group");
+    const catId = el.getAttribute("data-mg-cat");
+    const key = el.getAttribute("data-mg-key");
+    updateMatchup((m) => {
+      // 現在の表示順を再計算
+      const appear = [];
+      m.notes.forEach((n) => {
+        if (n.category !== catId) return;
+        const k = (n.origin || "").trim() || "その他";
+        if (appear.indexOf(k) === -1) appear.push(k);
+      });
+      const saved = (m.groupOrder && m.groupOrder[catId]) || [];
+      const cur = appear.slice().sort((a, b) => {
+        const ia = saved.indexOf(a); const ib = saved.indexOf(b);
+        if (ia === -1 && ib === -1) return 0;
+        if (ia === -1) return 1;
+        if (ib === -1) return -1;
+        return ia - ib;
+      });
+      const i = cur.indexOf(key);
+      const j = i + (dir === "up" ? -1 : 1);
+      if (i === -1 || j < 0 || j >= cur.length) return m;
+      const tmp = cur[i]; cur[i] = cur[j]; cur[j] = tmp;
+      const groupOrder = Object.assign({}, m.groupOrder || {});
+      groupOrder[catId] = cur;
+      return Object.assign({}, m, { groupOrder: groupOrder });
+    });
+  }));
+  app.querySelectorAll("[data-rename-group]").forEach((el) => el.addEventListener("click", (e) => {
+    e.stopPropagation();
+    ui.renameTarget = { type: "group", catId: el.getAttribute("data-rg-cat"), key: el.getAttribute("data-rg-key"), value: el.getAttribute("data-rg-key") };
+    render();
+    requestAnimationFrame(() => { const inp = document.querySelector("[data-rename-input]"); if (inp) { inp.focus(); inp.select(); } });
+  }));
+  app.querySelectorAll("[data-rename-sub]").forEach((el) => el.addEventListener("click", (e) => {
+    e.stopPropagation();
+    ui.renameTarget = { type: "sub", catId: el.getAttribute("data-rs-cat"), groupKey: el.getAttribute("data-rs-group"), key: el.getAttribute("data-rs-key"), value: el.getAttribute("data-rs-key") };
+    render();
+    requestAnimationFrame(() => { const inp = document.querySelector("[data-rename-input]"); if (inp) { inp.focus(); inp.select(); } });
+  }));
+  app.querySelectorAll("[data-rename-input]").forEach((el) => {
+    el.addEventListener("input", () => { if (ui.renameTarget) ui.renameTarget.value = el.value; });
+    el.addEventListener("click", (e) => e.stopPropagation());
+    el.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); applyRename(); } });
+  });
+  app.querySelectorAll("[data-rename-confirm]").forEach((el) => el.addEventListener("click", (e) => { e.stopPropagation(); applyRename(); }));
+  app.querySelectorAll("[data-rename-cancel]").forEach((el) => el.addEventListener("click", (e) => { e.stopPropagation(); ui.renameTarget = null; render(); }));
+  const addBtn = app.querySelector("[data-add]");
+  if (addBtn) addBtn.addEventListener("click", startAdd);
+  app.querySelectorAll("[data-toggle]").forEach((el) => el.addEventListener("click", () => toggleExpand(el.getAttribute("data-toggle"))));
+  app.querySelectorAll("[data-edit]").forEach((el) => el.addEventListener("click", () => startEdit(el.getAttribute("data-edit"), el.getAttribute("data-edit-src") === "wip")));
+  app.querySelectorAll("[data-delete]").forEach((el) => el.addEventListener("click", () => {
+    const id = el.getAttribute("data-delete");
+    if (ui.confirmDeleteId === id) { deleteItem(id); }
+    else { ui.confirmDeleteId = id; render(); }
+  }));
+  app.querySelectorAll("[data-draft]").forEach((el) => el.addEventListener("input", () => { ui.draft[el.getAttribute("data-draft")] = el.value; }));
+  app.querySelectorAll("[data-voice]").forEach((el) => el.addEventListener("click", () => toggleVoice(el.getAttribute("data-voice"))));
+  app.querySelectorAll("[data-draft-frame]").forEach((el) => el.addEventListener("change", () => { ui.draft.frame = el.value === "" ? "" : parseInt(el.value, 10); }));
+  app.querySelectorAll("[data-set-framekind]").forEach((el) => el.addEventListener("click", () => { ui.draft.frameKind = el.getAttribute("data-set-framekind") || ""; render(); focusFirstInput(); }));
+  app.querySelectorAll("[data-origin-select]").forEach((el) => el.addEventListener("change", () => {
+    if (el.value === "__new__") {
+      ui.originNewMode = true;
+      ui.draft.origin = "";
+      render();
+      requestAnimationFrame(() => { const inp = document.querySelector('[data-draft="origin"]'); if (inp) inp.focus(); });
+    } else {
+      ui.draft.origin = el.value;
+      ui.draft.sub = "";
+      ui.subNewMode = false;
+      render();
+    }
+  }));
+  app.querySelectorAll("[data-origin-pick]").forEach((el) => el.addEventListener("click", () => { ui.originNewMode = false; ui.draft.origin = ""; ui.draft.sub = ""; ui.subNewMode = false; render(); }));
+  app.querySelectorAll("[data-sub-select]").forEach((el) => el.addEventListener("change", () => {
+    if (el.value === "__new__") {
+      ui.subNewMode = true;
+      ui.draft.sub = "";
+      render();
+      requestAnimationFrame(() => { const inp = document.querySelector('[data-draft="sub"]'); if (inp) inp.focus(); });
+    } else {
+      ui.draft.sub = el.value;
+    }
+  }));
+  app.querySelectorAll("[data-sub-pick]").forEach((el) => el.addEventListener("click", () => { ui.subNewMode = false; ui.draft.sub = ""; render(); }));
+  app.querySelectorAll("[data-set-position]").forEach((el) => el.addEventListener("click", () => { setDraftField("position", el.getAttribute("data-set-position") || null); render(); focusFirstInput(); }));
+  app.querySelectorAll("[data-set-drive]").forEach((el) => el.addEventListener("click", () => { const v = el.getAttribute("data-set-drive"); ui.draft.drive = v === "" ? null : parseInt(v, 10); render(); focusFirstInput(); }));
+  app.querySelectorAll("[data-toggle-oki]").forEach((el) => el.addEventListener("click", () => { const f = el.getAttribute("data-toggle-oki"); ui.draft[f] = !ui.draft[f]; render(); focusFirstInput(); }));
+  app.querySelectorAll("[data-toggle-wip]").forEach((el) => el.addEventListener("click", () => { ui.draft.wip = !ui.draft.wip; render(); focusFirstInput(); }));
+  app.querySelectorAll("[data-wip]").forEach((el) => el.addEventListener("click", () => {
+    toggleWip(el.getAttribute("data-wip"));
+  }));
+  app.querySelectorAll("[data-set-category]").forEach((el) => el.addEventListener("click", () => { const v = el.getAttribute("data-set-category"); if (v !== ui.draft.category) { ui.draft.origin = ""; ui.draft.sub = ""; ui.originNewMode = false; ui.subNewMode = false; } if (v === "setplay" && ui.draft.frame === 5) ui.draft.frame = ""; if (v === "punish" && ui.draft.frame === "") ui.draft.frame = 5; setDraftField("category", v); render(); focusFirstInput(); }));
+  app.querySelectorAll("[data-set-importance]").forEach((el) => el.addEventListener("click", () => { setDraftField("importance", parseInt(el.getAttribute("data-set-importance"), 10)); render(); focusFirstInput(); }));
+  app.querySelectorAll("[data-set-microtag]").forEach((el) => el.addEventListener("click", () => { setDraftField("microTag", el.getAttribute("data-set-microtag") || null); render(); focusFirstInput(); }));
+  app.querySelectorAll("[data-cancel-form]").forEach((el) => el.addEventListener("click", cancelForm));
+  app.querySelectorAll("[data-save-form]").forEach((el) => el.addEventListener("click", () => {
+    const id = el.getAttribute("data-save-form");
+    if (id === "new") saveAdd(); else saveEdit(id);
+    render();
+  }));
+  const openBackupBtn = app.querySelector("[data-open='backup']");
+  if (openBackupBtn) openBackupBtn.addEventListener("click", openBackup);
+  app.querySelectorAll("[data-close-backup]").forEach((el) => el.addEventListener("click", closeBackup));
+  const copyBtn = app.querySelector("[data-copy-backup]");
+  if (copyBtn) copyBtn.addEventListener("click", copyBackup);
+  const importBtn = app.querySelector("[data-import-backup]");
+  if (importBtn) importBtn.addEventListener("click", importBackup);
+  const exportFileBtn = app.querySelector("[data-export-file]");
+  if (exportFileBtn) exportFileBtn.addEventListener("click", exportFile);
+  const importFileInput = app.querySelector("[data-import-file]");
+  if (importFileInput) importFileInput.addEventListener("change", () => {
+    if (importFileInput.files && importFileInput.files[0]) importFile(importFileInput.files[0]);
+  });
+  const cloudLoginBtn = app.querySelector("[data-cloud-login]");
+  if (cloudLoginBtn) cloudLoginBtn.addEventListener("click", cloudLogin);
+  const cloudLogoutBtn = app.querySelector("[data-cloud-logout]");
+  if (cloudLogoutBtn) cloudLogoutBtn.addEventListener("click", cloudLogout);
+  const cloudCfgSaveBtn = app.querySelector("[data-cloud-config-save]");
+  if (cloudCfgSaveBtn) cloudCfgSaveBtn.addEventListener("click", applyCloudConfig);
+  const cloudCfgClearBtn = app.querySelector("[data-cloud-config-clear]");
+  if (cloudCfgClearBtn) cloudCfgClearBtn.addEventListener("click", clearCloudConfig);
+  const cloudRetryBtn = app.querySelector("[data-cloud-retry]");
+  if (cloudRetryBtn) cloudRetryBtn.addEventListener("click", () => location.reload());
+  const shareAddBtn = app.querySelector("[data-share-add]");
+  if (shareAddBtn) shareAddBtn.addEventListener("click", shareAddMember);
+  app.querySelectorAll("[data-share-remove]").forEach((el) => el.addEventListener("click", () => shareRemoveMember(el.getAttribute("data-share-remove"))));
+  const shareConnectBtn = app.querySelector("[data-share-connect]");
+  if (shareConnectBtn) shareConnectBtn.addEventListener("click", shareConnect);
+  const shareDisconnectBtn = app.querySelector("[data-share-disconnect]");
+  if (shareDisconnectBtn) shareDisconnectBtn.addEventListener("click", shareDisconnect);
+  const shareEmailInput = app.querySelector("#share-email-input");
+  if (shareEmailInput) shareEmailInput.addEventListener("keydown", (e) => { if (e.key === "Enter") shareAddMember(); });
+}
+
+// ================================================================
+// ---- クラウド同期 (Firebase: Googleログイン + Firestore) ----
+// ================================================================
+const FB_CONFIG_KEY = "sf6-counter-note-firebase-config";
+const FB_SDK_VERSION = "10.14.1";
+// このアプリ専用のFirebase設定（公開されても安全な情報。データ本体はセキュリティルールで保護）
+const FB_EMBEDDED_CONFIG = {
+  apiKey: "AIzaSyBYc7oOMIOZTM-1bxzNujABG0W5TLcNCFc",
+  authDomain: "counter-note-46c2c.firebaseapp.com",
+  projectId: "counter-note-46c2c",
+  storageBucket: "counter-note-46c2c.firebasestorage.app",
+  messagingSenderId: "546690956589",
+  appId: "1:546690956589:web:ad3a73f993f7bec89d67a4"
+};
+
+let cloud = {
+  status: "off", // off | loading | nologin | syncing | synced | error
+  user: null,
+  error: "",
+  lastSyncAt: null,
+  unsub: null,
+  pushTimer: null,
+  db: null,
+  ready: false, // 初回スナップショット受信済みか（受信前の書き込みは保留）
+  sharedMembers: [],   // 自分(またはオーナー)のノートの共有メンバー(Gmail)
+  shareOwnerUid: null, // 他人の共有ノートに接続中ならそのオーナーのuid
+  shareOwnerEmail: null,
+  shareInvite: null,   // 招待はあるが未接続の場合 {owner, ownerEmail}
+};
+
+function getFbConfig() {
+  try {
+    const raw = localStorage.getItem(FB_CONFIG_KEY);
+    if (raw) {
+      const cfg = JSON.parse(raw);
+      if (cfg && cfg.apiKey && cfg.projectId) return cfg;
+    }
+  } catch (e) {}
+  return FB_EMBEDDED_CONFIG;
+}
+
+// ---- 課題マーク（人ごと） ----
+function wipKeyName() { return (cloud.user && cloud.user.uid) ? cloud.user.uid : "local"; }
+function isWip(id) {
+  const m = state.wipMarks || {};
+  const u = m[wipKeyName()] || {};
+  const e = u[id];
+  return !!(e && e.on);
+}
+function setWip(id, on, skipSave) {
+  if (!state.wipMarks) state.wipMarks = {};
+  const k = wipKeyName();
+  if (!state.wipMarks[k]) state.wipMarks[k] = {};
+  const cur = state.wipMarks[k][id];
+  if (!!(cur && cur.on) === !!on) return;
+  state.wipMarks[k][id] = { on: !!on, ts: Date.now() };
+  if (!skipSave) save();
+}
+function toggleWip(id) { setWip(id, !isWip(id)); }
+function migrateLocalWip() {
+  if (!state.wipMarks || !cloud.user) return;
+  const local = state.wipMarks.local;
+  if (!local) return;
+  const k = cloud.user.uid;
+  if (!state.wipMarks[k]) state.wipMarks[k] = {};
+  Object.keys(local).forEach((id) => {
+    const a = state.wipMarks[k][id], b = local[id];
+    if (!a || (b.ts || 0) > (a.ts || 0)) state.wipMarks[k][id] = b;
+  });
+  delete state.wipMarks.local;
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+function setFbConfigFromText(text) {
+  const m = String(text || "").match(/\{[\s\S]*\}/);
+  if (!m) throw new Error("設定が見つかりません。firebaseConfig の { } 全体を貼り付けてください。");
+  let cfg;
+  try { cfg = JSON.parse(m[0]); }
+  catch (e) {
+    try { cfg = (new Function("return (" + m[0] + ")"))(); }
+    catch (e2) { throw new Error("設定を読み取れませんでした。コピーし直して貼り付けてください。"); }
+  }
+  if (!cfg || !cfg.apiKey || !cfg.projectId) throw new Error("apiKey / projectId が見つかりません。firebaseConfig 全体を貼り付けてください。");
+  const clean = {
+    apiKey: cfg.apiKey, authDomain: cfg.authDomain, projectId: cfg.projectId,
+    storageBucket: cfg.storageBucket, messagingSenderId: cfg.messagingSenderId, appId: cfg.appId,
+  };
+  localStorage.setItem(FB_CONFIG_KEY, JSON.stringify(clean));
+  return clean;
+}
+
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = src;
+    s.onload = resolve;
+    s.onerror = () => reject(new Error("スクリプトを読み込めませんでした（ネットワークを確認してください）"));
+    document.head.appendChild(s);
+  });
+}
+
+async function initCloud() {
+  const cfg = getFbConfig();
+  if (!cfg) { cloud.status = "off"; return; }
+  cloud.status = "loading";
+  safeRender();
+  try {
+    const base = "https://www.gstatic.com/firebasejs/" + FB_SDK_VERSION + "/";
+    await loadScript(base + "firebase-app-compat.js");
+    await loadScript(base + "firebase-auth-compat.js");
+    await loadScript(base + "firebase-firestore-compat.js");
+    firebase.initializeApp(cfg);
+    cloud.db = firebase.firestore();
+    try { await cloud.db.enablePersistence({ synchronizeTabs: true }); } catch (e) {}
+    firebase.auth().onAuthStateChanged(async (user) => {
+      cloud.user = user;
+      cloud.error = "";
+      if (cloud.unsub) { cloud.unsub(); cloud.unsub = null; }
+      if (user) {
+        await resolveShare();
+        migrateLocalWip();
+        startCloudListen();
+      } else {
+        cloud.status = "nologin";
+        cloud.shareOwnerUid = null; cloud.shareOwnerEmail = null; cloud.shareInvite = null;
+      }
+      safeRender();
+    });
+    firebase.auth().getRedirectResult().catch((e) => {
+      cloud.error = cloudErrText(e);
+      safeRender();
+    });
+  } catch (e) {
+    cloud.status = "error";
+    cloud.error = cloudErrText(e);
+    safeRender();
+  }
+}
+
+function cloudDocRef() {
+  const uid = cloud.shareOwnerUid || cloud.user.uid;
+  return cloud.db.collection("users").doc(uid).collection("appdata").doc("main");
+}
+
+function shareAcceptKey(ownerUid) { return "sf6-cn-share-accept-" + ownerUid; }
+
+// ログイン後、自分宛の共有招待(shares/{自分のGmail})があるか確認する
+async function resolveShare() {
+  cloud.shareOwnerUid = null; cloud.shareOwnerEmail = null; cloud.shareInvite = null;
+  const email = (cloud.user.email || "").toLowerCase();
+  if (!email) return;
+  try {
+    const snap = await cloud.db.collection("shares").doc(email).get();
+    if (!snap.exists) return;
+    const d = snap.data();
+    if (!d || !d.owner || d.owner === cloud.user.uid) return;
+    cloud.shareInvite = { owner: d.owner, ownerEmail: d.ownerEmail || "" };
+    let decision = null;
+    try { decision = localStorage.getItem(shareAcceptKey(d.owner)); } catch (e) {}
+    if (decision == null) {
+      const ok = confirm((d.ownerEmail || "共有相手") + " の共有メモ帳に招待されています。接続しますか？\n（接続すると全員で同じメモを読み書きします）");
+      decision = ok ? "yes" : "no";
+      try { localStorage.setItem(shareAcceptKey(d.owner), decision); } catch (e) {}
+    }
+    if (decision === "yes") {
+      cloud.shareOwnerUid = d.owner;
+      cloud.shareOwnerEmail = d.ownerEmail || "";
+    }
+  } catch (e) {}
+}
+
+async function shareAddMember() {
+  const inp = document.getElementById("share-email-input");
+  const errEl = document.getElementById("share-error");
+  const setErr = (t) => { if (errEl) errEl.textContent = t; };
+  const email = (inp ? inp.value : "").trim().toLowerCase();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setErr("メールアドレスの形式が正しくありません"); return; }
+  if (cloud.user && email === (cloud.user.email || "").toLowerCase()) { setErr("自分のアドレスは追加できません"); return; }
+  const list = (cloud.sharedMembers || []).slice();
+  if (list.indexOf(email) >= 0) { setErr("すでに追加されています"); return; }
+  setErr("");
+  try {
+    await cloud.db.collection("shares").doc(email).set({ owner: cloud.user.uid, ownerEmail: (cloud.user.email || "").toLowerCase() });
+    cloud.sharedMembers = list.concat([email]);
+    schedulePush(0);
+    render();
+  } catch (e) { setErr(cloudErrText(e)); }
+}
+
+async function shareRemoveMember(email) {
+  if (!confirm(email + " を共有から外しますか？")) return;
+  try { await cloud.db.collection("shares").doc(email).delete(); } catch (e) {}
+  cloud.sharedMembers = (cloud.sharedMembers || []).filter((m) => m !== email);
+  schedulePush(0);
+  render();
+}
+
+function shareConnect() {
+  if (!cloud.shareInvite) return;
+  try { localStorage.setItem(shareAcceptKey(cloud.shareInvite.owner), "yes"); } catch (e) {}
+  location.reload();
+}
+
+function shareDisconnect() {
+  if (!cloud.shareOwnerUid) return;
+  if (!confirm("共有メモ帳から切断しますか？（自分専用のメモ帳に戻ります。共有メモ帳のデータは消えません）")) return;
+  try { localStorage.setItem(shareAcceptKey(cloud.shareOwnerUid), "no"); } catch (e) {}
+  location.reload();
+}
+
+function startCloudListen() {
+  cloud.status = "syncing";
+  cloud.ready = false;
+  cloud.unsub = cloudDocRef().onSnapshot((snap) => {
+    if (snap.metadata.hasPendingWrites) return;
+    cloud.ready = true;
+    const remoteRaw = snap.exists ? snap.data() : null;
+    if (!remoteRaw) {
+      // クラウドにまだデータがない → 手元のデータをアップロード
+      cloud.status = "syncing";
+      schedulePush(0);
+      safeRender();
+      return;
+    }
+    if (!cloud.pushTimer) cloud.sharedMembers = remoteRaw.members || [];
+    const local = { store: state.store || {}, personalByChar: state.personalByChar || {}, deleted: state.deleted || {}, wipMarks: state.wipMarks || {} };
+    const remote = { store: remoteRaw.store || {}, personalByChar: remoteRaw.personalByChar || {}, deleted: remoteRaw.deleted || {}, wipMarks: remoteRaw.wipMarks || {} };
+    const merged = mergeCloudData(local, remote);
+    const localJson = stableJson(local);
+    const mergedJson = stableJson(merged);
+    const remoteJson = stableJson(remote);
+    if (mergedJson !== localJson) {
+      state.store = merged.store;
+      state.personalByChar = merged.personalByChar;
+      state.deleted = merged.deleted;
+      state.wipMarks = merged.wipMarks;
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
+    }
+    cloud.status = "synced";
+    cloud.lastSyncAt = Date.now();
+    if (mergedJson !== remoteJson) schedulePush(800);
+    safeRender();
+  }, (err) => {
+    cloud.status = "error";
+    cloud.error = cloudErrText(err);
+    safeRender();
+  });
+}
+
+function cloudOnLocalSave() {
+  if (cloud.user && cloud.db) schedulePush(1200);
+}
+
+function schedulePush(delay) {
+  if (!cloud.user || !cloud.db) return;
+  if (cloud.pushTimer) clearTimeout(cloud.pushTimer);
+  cloud.pushTimer = setTimeout(doPush, delay == null ? 1200 : delay);
+}
+
+function doPush() {
+  cloud.pushTimer = null;
+  if (!cloud.user || !cloud.db) return;
+  if (!cloud.ready) { schedulePush(1500); return; }
+  const payload = JSON.parse(JSON.stringify({
+    store: state.store || {},
+    personalByChar: state.personalByChar || {},
+    deleted: pruneDeleted(state.deleted || {}),
+    wipMarks: state.wipMarks || {},
+    members: cloud.sharedMembers || [],
+  }));
+  payload.savedAt = firebase.firestore.FieldValue.serverTimestamp();
+  cloud.status = "syncing";
+  safeRender();
+  cloudDocRef().set(payload).then(() => {
+    cloud.status = "synced";
+    cloud.lastSyncAt = Date.now();
+    safeRender();
+  }).catch((e) => {
+    cloud.status = "error";
+    cloud.error = cloudErrText(e);
+    safeRender();
+  });
+}
+
+function pruneDeleted(deleted) {
+  const cutoff = Date.now() - 60 * 24 * 60 * 60 * 1000;
+  const out = {};
+  Object.keys(deleted).forEach((id) => { if (deleted[id] >= cutoff) out[id] = deleted[id]; });
+  return out;
+}
+
+function mergeCloudData(a, b) {
+  const deleted = {};
+  [a.deleted, b.deleted].forEach((d) => {
+    Object.keys(d || {}).forEach((id) => { deleted[id] = Math.max(deleted[id] || 0, d[id] || 0); });
+  });
+  const prunedDeleted = pruneDeleted(deleted);
+  const keep = (n) => n && n.id && !(deleted[n.id] && deleted[n.id] >= (n.updatedAt || 0));
+
+  function mergeMatchup(x, y) {
+    if (!x && !y) return null;
+    if (!x || !y) {
+      const m = x || y;
+      return Object.assign({}, m, { notes: (m.notes || []).filter(keep) });
+    }
+    const newer = (x.metaUpdatedAt || 0) >= (y.metaUpdatedAt || 0) ? x : y;
+    const older = newer === x ? y : x;
+    const byId = {};
+    (x.notes || []).concat(y.notes || []).forEach((n) => {
+      if (!n || !n.id) return;
+      const p = byId[n.id];
+      if (!p || (n.updatedAt || 0) > (p.updatedAt || 0)) byId[n.id] = n;
+    });
+    const seen = {};
+    const notes = [];
+    [(newer.notes || []), (older.notes || [])].forEach((arr) => {
+      arr.forEach((n) => {
+        if (!n || !n.id || seen[n.id]) return;
+        seen[n.id] = 1;
+        const best = byId[n.id];
+        if (keep(best)) notes.push(best);
+      });
+    });
+    return Object.assign({}, older, newer, { notes: notes });
+  }
+
+  function mergeMap(ma, mb) {
+    const out = {};
+    const keys = {};
+    Object.keys(ma || {}).forEach((k) => { keys[k] = 1; });
+    Object.keys(mb || {}).forEach((k) => { keys[k] = 1; });
+    Object.keys(keys).forEach((k) => {
+      const m = mergeMatchup((ma || {})[k], (mb || {})[k]);
+      if (m) out[k] = m;
+    });
+    return out;
+  }
+
+  function mergeWipMarks(wa, wb) {
+    const cutoff = Date.now() - 60 * 24 * 60 * 60 * 1000;
+    const out = {};
+    const users = {};
+    Object.keys(wa || {}).forEach((k) => { users[k] = 1; });
+    Object.keys(wb || {}).forEach((k) => { users[k] = 1; });
+    Object.keys(users).forEach((u) => {
+      const A = (wa || {})[u] || {}, B = (wb || {})[u] || {};
+      const ids = {};
+      Object.keys(A).forEach((id) => { ids[id] = 1; });
+      Object.keys(B).forEach((id) => { ids[id] = 1; });
+      const res = {};
+      Object.keys(ids).forEach((id) => {
+        if (deleted[id]) return;
+        const x = A[id], y = B[id];
+        const best = (!y || (x && (x.ts || 0) >= (y.ts || 0))) ? x : y;
+        if (best && (best.on || (best.ts || 0) >= cutoff)) res[id] = best;
+      });
+      if (Object.keys(res).length) out[u] = res;
+    });
+    return out;
+  }
+
+  return {
+    store: mergeMap(a.store, b.store),
+    personalByChar: mergeMap(a.personalByChar, b.personalByChar),
+    deleted: prunedDeleted,
+    wipMarks: mergeWipMarks(a.wipMarks, b.wipMarks),
+  };
+}
+
+function stableJson(obj) {
+  if (obj === null || typeof obj !== "object") return JSON.stringify(obj);
+  if (Array.isArray(obj)) return "[" + obj.map(stableJson).join(",") + "]";
+  const keys = Object.keys(obj).filter((k) => obj[k] !== undefined).sort();
+  return "{" + keys.map((k) => JSON.stringify(k) + ":" + stableJson(obj[k])).join(",") + "}";
+}
+
+function safeRender() {
+  if (ui.adding || ui.editingId || ui.recordingField) return;
+  render();
+}
+
+function cloudErrText(e) {
+  if (!e) return "不明なエラー";
+  const code = e.code || "";
+  if (code === "permission-denied") return "アクセスが拒否されました。Firestoreのセキュリティルールを確認してください。";
+  if (code === "auth/unauthorized-domain") return "このサイトのドメインがFirebaseで許可されていません。Authentication→設定→承認済みドメインに追加してください。";
+  if (code === "auth/operation-not-allowed") return "Googleログインが有効になっていません。Firebaseコンソールで有効にしてください。";
+  if (code === "unavailable") return "オフラインのようです。接続が戻ると自動で同期されます。";
+  return String(e.message || e);
+}
+
+function cloudLogin() {
+  if (typeof firebase === "undefined" || !firebase.auth) return;
+  cloud.error = "";
+  const provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider).catch((e) => {
+    const code = e && e.code;
+    if (code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request") return;
+    if (code === "auth/popup-blocked" || code === "auth/operation-not-supported-in-this-environment") {
+      firebase.auth().signInWithRedirect(provider).catch((e2) => { cloud.error = cloudErrText(e2); safeRender(); });
+      return;
+    }
+    cloud.error = cloudErrText(e);
+    safeRender();
+  });
+}
+
+function cloudLogout() {
+  if (typeof firebase === "undefined" || !firebase.auth) return;
+  firebase.auth().signOut();
+}
+
+function applyCloudConfig() {
+  const ta = document.getElementById("fb-config-text");
+  const errEl = document.getElementById("fb-config-error");
+  try {
+    setFbConfigFromText(ta ? ta.value : "");
+    location.reload();
+  } catch (e) {
+    if (errEl) errEl.textContent = String(e.message || e);
+  }
+}
+
+function hasLocalCfgOverride() {
+  try { return !!localStorage.getItem(FB_CONFIG_KEY); } catch (e) { return false; }
+}
+
+function clearCloudConfig() {
+  if (!confirm("クラウド同期の設定を解除しますか？（メモのデータは消えません）")) return;
+  try { localStorage.removeItem(FB_CONFIG_KEY); } catch (e) {}
+  location.reload();
+}
+
+function renderCloudSection() {
+  const cfg = getFbConfig();
+  let inner = "";
+  if (!cfg) {
+    inner =
+      '<p class="desc">Googleアカウントでログインすると、スマホ・PCなど複数の端末で自動的にデータが共有されます。</p>' +
+      '<p class="desc">初回のみ設定が必要です：セットアップ手順書のとおりFirebaseの「firebaseConfig」をコピーして、ここに貼り付けてください。</p>' +
+      '<textarea id="fb-config-text" rows="4" placeholder="const firebaseConfig = { apiKey: ... } の { } 部分を貼り付け"></textarea>' +
+      '<p id="fb-config-error" style="font-size:11px;color:var(--red);margin:0 0 8px"></p>' +
+      '<button class="action-btn btn-amber" data-cloud-config-save="1">同期を設定する</button>';
+  } else if (cloud.status === "loading") {
+    inner = '<p class="desc">☁ 同期機能を読み込み中…</p>';
+  } else if (cloud.status === "nologin") {
+    inner =
+      '<p class="desc">Googleアカウントでログインすると、メモが自動でクラウドに保存され、他の端末とも共有されます。</p>' +
+      (cloud.error ? '<p style="font-size:11px;color:var(--red);margin:0 0 8px">' + esc(cloud.error) + '</p>' : '') +
+      '<button class="action-btn btn-amber" data-cloud-login="1">Googleでログイン</button>' +
+      (hasLocalCfgOverride() ? '<button class="action-btn" style="background:none;color:var(--text-dim);text-decoration:underline;margin-left:8px" data-cloud-config-clear="1">設定を解除</button>' : '');
+  } else if (cloud.status === "error") {
+    inner =
+      '<p style="font-size:12px;color:var(--red);margin:0 0 8px">同期エラー: ' + esc(cloud.error || "不明なエラー") + '</p>' +
+      '<button class="action-btn btn-amber" data-cloud-retry="1">再読み込み</button>' +
+      (hasLocalCfgOverride() ? '<button class="action-btn" style="background:none;color:var(--text-dim);text-decoration:underline;margin-left:8px" data-cloud-config-clear="1">設定を解除</button>' : '');
+  } else {
+    const email = cloud.user && (cloud.user.email || cloud.user.displayName) || "";
+    const when = cloud.lastSyncAt ? new Date(cloud.lastSyncAt).toLocaleTimeString("ja-JP", { hour: "2-digit", minute: "2-digit" }) : "-";
+    const statusLabel = cloud.status === "synced" ? '<span style="color:var(--green)">✓ 同期済み</span>' : '<span style="color:var(--accent)">同期中…</span>';
+    inner =
+      '<p class="desc" style="margin-bottom:4px">☁ クラウド同期: ' + statusLabel + '　<span style="color:var(--text-faint)">最終同期 ' + when + '</span></p>' +
+      '<p class="desc">' + esc(email) + ' としてログイン中。他の端末でも同じURLを開いて同じアカウントでログインすれば、データが自動で共有されます。</p>' +
+      (cloud.error ? '<p style="font-size:11px;color:var(--red);margin:0 0 8px">' + esc(cloud.error) + '</p>' : '') +
+      '<button class="action-btn" style="background:var(--input);color:var(--text-dim)" data-cloud-logout="1">ログアウト</button>' +
+      renderShareBlock();
+  }
+  return '<div>' + inner + '</div>';
+}
+
+function renderShareBlock() {
+  if (!cloud.user) return "";
+  let html = '<div class="hr" style="margin-top:12px"></div>';
+  if (cloud.shareOwnerUid) {
+    html +=
+      '<p class="desc" style="margin-bottom:4px">👥 <b style="color:var(--accent)">' + esc(cloud.shareOwnerEmail || "共有相手") + ' の共有メモ帳に接続中</b></p>' +
+      '<p class="desc">メモは全員で読み書きされます（課題マークは自分専用）。</p>' +
+      '<button class="action-btn" style="background:var(--input);color:var(--text-dim)" data-share-disconnect="1">共有から切断</button>';
+    return html;
+  }
+  if (cloud.shareInvite) {
+    html +=
+      '<p class="desc">👥 ' + esc(cloud.shareInvite.ownerEmail || "共有相手") + ' の共有メモ帳への招待があります。</p>' +
+      '<button class="action-btn btn-amber" data-share-connect="1">共有メモ帳に接続する</button>';
+    return html;
+  }
+  const members = cloud.sharedMembers || [];
+  const rows = members.map((m) =>
+    '<div style="display:flex;align-items:center;justify-content:space-between;background:var(--input);border-radius:6px;padding:6px 10px;margin-bottom:4px">' +
+      '<span style="font-size:12px;font-family:JetBrains Mono,monospace">' + esc(m) + '</span>' +
+      '<button style="background:none;border:none;color:var(--red);font-size:12px" data-share-remove="' + esc(m) + '">外す</button>' +
+    '</div>'
+  ).join("");
+  html +=
+    '<p class="desc" style="margin-bottom:4px">👥 <b>メモ帳の共有</b></p>' +
+    '<p class="desc">信頼できる相手のGmailを追加すると、その人はこのURLを開いてGoogleでログインするだけで、あなたと同じメモ帳を読み書きできます（課題マークは人ごとに別）。</p>' +
+    rows +
+    '<div style="display:flex;gap:6px;margin:6px 0 4px">' +
+      '<input type="text" id="share-email-input" placeholder="相手のGmailアドレス" style="flex:1;background:var(--input);border:1px solid var(--border);border-radius:6px;color:#fff;padding:8px 10px;font-size:13px" autocapitalize="none" autocorrect="off">' +
+      '<button class="action-btn btn-amber" style="margin-bottom:0" data-share-add="1">追加</button>' +
+    '</div>' +
+    '<p id="share-error" style="font-size:11px;color:var(--red);margin:0 0 8px"></p>';
+  return html;
+}
+
+render();
+initCloud();
+</script>
+</body>
+</html>
